@@ -10,8 +10,8 @@ using MyTeamTasksRecom.Models;
 namespace MyTeamTasksRecom.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191010231438_NomeDaMigracao")]
-    partial class NomeDaMigracao
+    [Migration("20191017223019_NomeMigracao")]
+    partial class NomeMigracao
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

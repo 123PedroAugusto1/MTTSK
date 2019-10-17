@@ -1,0 +1,27 @@
+﻿
+@{
+    List<Funcionario> funcionarios = ViewBag.Funcionarios;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    
+    <h2>Xesquedele</h2>
+    <a asp-action="Cadastrar">Cadastrar</a>
+    <table>
+        <tbody>
+            @foreach (Funcionario funcionario in funcionarios)
+            {
+                <tr>@funcionario.Nome</tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyTeamTasksRecom.DAL;
 using MyTeamTasksRecom.Models;
 
 namespace MyTeamTasksRecom
@@ -33,9 +34,13 @@ namespace MyTeamTasksRecom
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //Configurando a injeção de dependência
+            services.AddScoped<FuncionarioDAO>();
             services.AddDbContext<Context>
                 (options => options.UseSqlServer
-                (Configuration.GetConnectionString("MyTeamConnection")));
+                (Configuration.GetConnectionString
+                ("MyTeamConnection")));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -49,10 +54,8 @@ namespace MyTeamTasksRecom
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
@@ -60,7 +63,7 @@ namespace MyTeamTasksRecom
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Funcionario}/{action=index}/{id?}");
             });
         }
     }

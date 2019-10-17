@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace MyTeamTasksRecom.Models
 {
     [Table("Cliente")]
-    class Cliente : Pessoa
+    public class Cliente : Pessoa
     {
         public Cliente()
         {

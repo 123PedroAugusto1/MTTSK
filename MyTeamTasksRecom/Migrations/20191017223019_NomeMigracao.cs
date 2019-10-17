@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MyTeamTasksRecom.Migrations
 {
-    public partial class NomeDaMigracao : Migration
+    public partial class NomeMigracao : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
