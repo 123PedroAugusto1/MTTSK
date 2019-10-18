@@ -24,6 +24,7 @@ namespace MyTeamTasksRecom.Controllers
             return View();
         }
 
+
         public IActionResult Cadastrar()
         {
             return View();
@@ -41,6 +42,13 @@ namespace MyTeamTasksRecom.Controllers
             };
             _funcionarioDAO.Cadastrar(f);
             return View();
+        }
+
+        public IActionResult Remover(int id)
+        {
+      
+            _funcionarioDAO.Remover(id);
+            return RedirectToAction("index");
         }
     }
 }

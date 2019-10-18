@@ -25,6 +25,16 @@ namespace MyTeamTasksRecom.DAL
         {
             return _context.Funcionarios.ToList();
         }
+        public  Funcionario BuscarFuncionarioPorId(int id)
+        {
+            return _context.Funcionarios.Find(id);
+        }
+
+        public void Remover(int id)
+        {           
+            _context.Funcionarios.Remove(BuscarFuncionarioPorId(id));
+            _context.SaveChanges();
+        }
         
        
     }

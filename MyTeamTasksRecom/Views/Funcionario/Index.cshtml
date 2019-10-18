@@ -11,15 +11,30 @@
     <title>Index</title>
 </head>
 <body>
-    
-    <h2>Xesquedele</h2>
+
+    <h2>Gerenciamento</h2>
     <a asp-action="Cadastrar">Cadastrar</a>
-    <table>
+    <br /><br />
+    <table width="600" border="1" bgcolor="#CCC">
+        <thead>
+            <tr>
+                <th width="101">Nome:</th>
+
+                <th width="101"></th>
+
+            </tr>
+        </thead>
         <tbody>
             @foreach (Funcionario funcionario in funcionarios)
             {
-                <tr>@funcionario.Nome</tr>
+                <tr>
+                    <td>@funcionario.Nome</td>
+                    <td>
+                        <a asp-action="Remover" asp-route-id="@funcionario.PessoaId">Remover</a>
+                    </td>
+                </tr>
             }
+
         </tbody>
     </table>
 
