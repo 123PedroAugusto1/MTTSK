@@ -17,7 +17,6 @@ namespace MyTeamTasksRecom.Models
             CriadoEm = DateTime.Now;
         }
 
-
         public override string ToString()
         {
             return Nome;

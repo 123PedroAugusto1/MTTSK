@@ -1,0 +1,20 @@
+﻿@{  
+   Funcionario funcionario = ViewBag.Funcionario;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alterar</title>
+</head>
+<body>
+    <form asp-action="Alterar" method="post">
+        <label>Nome:</label>
+        <input type="text" name="txtNome" value="@funcionario.Nome" /><br />
+        <input type="submit" value="Alterar" />
+    </form>
+</body>
+</html>
+

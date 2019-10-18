@@ -39,6 +39,7 @@ namespace MyTeamTasksRecom.Controllers
             {
                 Nome = txtNome,
 
+
             };
             _funcionarioDAO.Cadastrar(f);
             return View();
@@ -50,5 +51,18 @@ namespace MyTeamTasksRecom.Controllers
             _funcionarioDAO.Remover(id);
             return RedirectToAction("index");
         }
+        public IActionResult Alterar(int ? id)
+        {
+            ViewBag.Funcionario = _funcionarioDAO.BuscarFuncionarioPorId(id);
+            return RedirectToAction("Alterar");
+        }
+        [HttpPost]
+        public IActionResult Alterar(String txtNome)
+        {
+            return RedirectToAction("index");
+        }
+
+
+
     }
 }
