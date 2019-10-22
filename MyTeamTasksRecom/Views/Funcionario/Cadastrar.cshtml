@@ -1,15 +1,16 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+   
+    Layout = "~/Views/Shared/LayoutProjeto.cshtml";
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Cadastrar</title>
-</head>
-<body>
-    <form asp-action="Cadastrar" method="post">
-        <label>Nome:</label>
-        <input type="text" name="txtNome" /><br />       
-        <input type="submit" value="Cadastrar" />    
-    </form>
-</body>
-</html>
+}
+
+<form asp-action="Cadastrar" method="post">
+    <fieldset>
+        <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome" name="txtNome" /><br />
+            <input type="submit" value="Cadastrar" class="btn btn-primary" />
+        </div>
+    </fieldset>
+</form>
+

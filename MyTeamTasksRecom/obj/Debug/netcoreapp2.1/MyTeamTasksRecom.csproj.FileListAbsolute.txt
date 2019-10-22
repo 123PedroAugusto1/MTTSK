@@ -45,6 +45,6 @@ C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.dll
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.pdb
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.csproj.CopyComplete
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Cadastrar.g.cshtml.cs
-C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Index.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Alterar.g.cshtml.cs
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutProjeto.g.cshtml.cs

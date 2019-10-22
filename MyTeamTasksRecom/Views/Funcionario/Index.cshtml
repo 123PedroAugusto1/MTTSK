@@ -1,43 +1,38 @@
 ﻿
 @{
     List<Funcionario> funcionarios = ViewBag.Funcionarios;
+    Layout = "~/Views/Shared/LayoutProjeto.cshtml";
+
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-
-    <h2>Gerenciamento</h2>
-    <a asp-action="Cadastrar">Cadastrar</a>
-    <br /><br />
-    <table width="600" border="1" bgcolor="#CCC">
-        <thead>
-            <tr>
-                <th width="101">Nome:</th>
-
-                <th width="101"></th>
-
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (Funcionario funcionario in funcionarios)
-            {
+ 
+    <div class="container" style="margin-top:30px;margin-bottom:30px">
+        <h2>Gerenciamento</h2>
+        <a asp-action="Cadastrar" class="btn btn-primary">Cadastrar</a>
+        <br /><br />
+        <table class="table table-hover">
+            <thead>
                 <tr>
-                    <td>@funcionario.Nome</td>
-                    <td>
-                        <a asp-action="Remover" asp-route-id="@funcionario.PessoaId">Remover</a>
-                        <a asp-action="Alterar" asp-route-id="@funcionario.PessoaId">Alterar</a>
-                    </td>
+                    <th width="101">Nome:</th>
+
+                    <th width="101"></th>
+
                 </tr>
-            }
+            </thead>
+            <tbody>
+                @foreach (Funcionario funcionario in funcionarios)
+                {
+                    <tr>
+                        <td>@funcionario.Nome</td>
+                        <td>
+                            <a asp-action="Remover" asp-route-id="@funcionario.PessoaId">Remover</a>
+                            <a asp-action="Alterar" asp-route-id="@funcionario.PessoaId">Alterar</a>
+                        </td>
+                    </tr>
+                }
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
+    
 
-</body>
-</html>
