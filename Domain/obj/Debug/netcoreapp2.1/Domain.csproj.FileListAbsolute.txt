@@ -1,0 +1,9 @@
+C:\ProjetoC#\MTTSK\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
+C:\ProjetoC#\MTTSK\Domain\bin\Debug\netcoreapp2.1\Domain.dll
+C:\ProjetoC#\MTTSK\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache
+C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.csproj.CoreCompileInputs.cache
+C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cache
+C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
+C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.dll
+C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.pdb

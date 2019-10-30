@@ -19,12 +19,12 @@ using MyTeamTasksRecom;
 #line default
 #line hidden
 #line 2 "C:\ProjetoC#\MTTSK\MyTeamTasksRecom\Views\_ViewImports.cshtml"
-using MyTeamTasksRecom.Models;
+using Domain;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4101c5cf7f1acf2099b2a56ef0413b5e3ae51961", @"/Views/Funcionario/Alterar.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"44b7b50dc21d5d9aee099fdaddf8cf830ccbbdff", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"47a2d5f097c6f8d35a6f149c0b524f78018ad37c", @"/Views/_ViewImports.cshtml")]
     public class Views_Funcionario_Alterar : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Alterar", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -64,7 +64,7 @@ using MyTeamTasksRecom.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(89, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a7a24ad13f3041ed806aed9e74549ee6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30ea8254bdd04396b3f10d4746889db7", async() => {
                 BeginContext(95, 89, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Alterar</title>\r\n");
                 EndContext();
@@ -84,12 +84,12 @@ using MyTeamTasksRecom.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(193, 232, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "48bc8a8665a34a459a302a6817fd4ea5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebbfb1e20d5c499bab6fab03877eb289", async() => {
                 BeginContext(199, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(205, 211, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "df5207058dc04e73b91daea8cd9ca9cf", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28baff1539064681ac295b58c3d89bc4", async() => {
                     BeginContext(246, 73, true);
                     WriteLiteral("\r\n        <label>Nome:</label>\r\n        <input type=\"text\" name=\"txtNome\"");
                     EndContext();

@@ -10,9 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MyTeamTasksRecom.DAL;
-using MyTeamTasksRecom.Models;
-
+using Repository;
 namespace MyTeamTasksRecom
 {
     public class Startup

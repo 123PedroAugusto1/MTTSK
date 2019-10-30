@@ -48,3 +48,8 @@ C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funciona
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Index.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Alterar.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutProjeto.g.cshtml.cs
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\Domain.dll
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\Repository.dll
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Login.g.cshtml.cs
