@@ -28,7 +28,7 @@ namespace MyTeamTasksRecom
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
+                options.CheckConsentNeeded = context => false;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
@@ -38,6 +38,9 @@ namespace MyTeamTasksRecom
                 (options => options.UseSqlServer
                 (Configuration.GetConnectionString
                 ("MyTeamConnection")));
+
+            services.AddSession();
+            services.AddDistributedMemoryCache();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -56,6 +59,7 @@ namespace MyTeamTasksRecom
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

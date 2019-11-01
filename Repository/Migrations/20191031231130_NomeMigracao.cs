@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Repository.Migrations
 {
-    public partial class CriarBanco : Migration
+    public partial class NomeMigracao : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -23,20 +23,20 @@ namespace Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Funcionario",
+                name: "Endereco",
                 columns: table => new
                 {
-                    PessoaId = table.Column<int>(nullable: false)
+                    id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Nome = table.Column<string>(nullable: true),
-                    CriadoEm = table.Column<DateTime>(nullable: false),
-                    Cargo = table.Column<string>(nullable: true),
-                    Login = table.Column<string>(nullable: true),
-                    Senha = table.Column<string>(nullable: true)
+                    Logradouro = table.Column<string>(nullable: true),
+                    Cep = table.Column<string>(nullable: true),
+                    Bairro = table.Column<string>(nullable: true),
+                    Localidade = table.Column<string>(nullable: true),
+                    Uf = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Funcionario", x => x.PessoaId);
+                    table.PrimaryKey("PK_Endereco", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -58,6 +58,30 @@ namespace Repository.Migrations
                         column: x => x.clientePessoaId,
                         principalTable: "Cliente",
                         principalColumn: "PessoaId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Funcionario",
+                columns: table => new
+                {
+                    PessoaId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(nullable: true),
+                    CriadoEm = table.Column<DateTime>(nullable: false),
+                    Cargo = table.Column<string>(nullable: true),
+                    Login = table.Column<string>(nullable: true),
+                    Senha = table.Column<string>(nullable: true),
+                    Enderecoid = table.Column<int>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Funcionario", x => x.PessoaId);
+                    table.ForeignKey(
+                        name: "FK_Funcionario_Endereco_Enderecoid",
+                        column: x => x.Enderecoid,
+                        principalTable: "Endereco",
+                        principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -102,6 +126,11 @@ namespace Repository.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Funcionario_Enderecoid",
+                table: "Funcionario",
+                column: "Enderecoid");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Projeto_clientePessoaId",
                 table: "Projeto",
                 column: "clientePessoaId");
@@ -132,6 +161,9 @@ namespace Repository.Migrations
 
             migrationBuilder.DropTable(
                 name: "Projeto");
+
+            migrationBuilder.DropTable(
+                name: "Endereco");
 
             migrationBuilder.DropTable(
                 name: "Cliente");

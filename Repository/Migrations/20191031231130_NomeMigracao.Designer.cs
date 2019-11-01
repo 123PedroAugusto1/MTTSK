@@ -10,8 +10,8 @@ using Repository;
 namespace Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191030000806_CriarBanco")]
-    partial class CriarBanco
+    [Migration("20191031231130_NomeMigracao")]
+    partial class NomeMigracao
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,6 +36,27 @@ namespace Repository.Migrations
                     b.ToTable("Cliente");
                 });
 
+            modelBuilder.Entity("Domain.Endereco", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Bairro");
+
+                    b.Property<string>("Cep");
+
+                    b.Property<string>("Localidade");
+
+                    b.Property<string>("Logradouro");
+
+                    b.Property<string>("Uf");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Endereco");
+                });
+
             modelBuilder.Entity("Domain.Funcionario", b =>
                 {
                     b.Property<int>("PessoaId")
@@ -46,6 +67,8 @@ namespace Repository.Migrations
 
                     b.Property<DateTime>("CriadoEm");
 
+                    b.Property<int?>("Enderecoid");
+
                     b.Property<string>("Login");
 
                     b.Property<string>("Nome");
@@ -53,6 +76,8 @@ namespace Repository.Migrations
                     b.Property<string>("Senha");
 
                     b.HasKey("PessoaId");
+
+                    b.HasIndex("Enderecoid");
 
                     b.ToTable("Funcionario");
                 });
@@ -113,6 +138,13 @@ namespace Repository.Migrations
                     b.HasIndex("RequisitantePessoaId");
 
                     b.ToTable("Tarefa");
+                });
+
+            modelBuilder.Entity("Domain.Funcionario", b =>
+                {
+                    b.HasOne("Domain.Endereco", "Endereco")
+                        .WithMany()
+                        .HasForeignKey("Enderecoid");
                 });
 
             modelBuilder.Entity("Domain.Projeto", b =>

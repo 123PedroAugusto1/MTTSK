@@ -1,6 +1,6 @@
 ﻿
 @{
-   
+   @model Funcionario
     Layout = "~/Views/Shared/LayoutProjeto.cshtml";
 
 }
@@ -8,7 +8,36 @@
 <form asp-action="Cadastrar" method="post">
     <fieldset>
         <div class="form-group">
+            <label asp-for="Endereco.Cep"></label>
+            <input type="text" class="form-control" asp-for="Endereco.Cep" />
+            
+        </div>
+        <input type="submit" class="btn btn-info" value="Buscar" asp-action="BuscarCep" asp-controller="Funcionario" />
+        <div class="form-group">
+            <label asp-for="Endereco.Logradouro"></label>
+            <input type="text" class="form-control" asp-for="Endereco.Logradouro" />
+        </div>
+      
+        <div class="form-group">
+            <label asp-for="Endereco.Bairro"></label>
+            <input type="text" class="form-control" asp-for="Endereco.Bairro" />
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Endereco.Uf"></label>
+            <input type="text" class="form-control" asp-for="Endereco.Uf" />
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="form-group">
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome" name="txtNome" /><br />
+
+            <input type="text" class="form-control" id="Login" aria-describedby="Login" placeholder="Login" name="txtLogin" /><br />
+
+            <input type="text" class="form-control" id="Senha" aria-describedby="Senha" placeholder="Senha" name="txtSenha" /><br />
+
+
             <input type="submit" value="Cadastrar" class="btn btn-primary" />
         </div>
     </fieldset>

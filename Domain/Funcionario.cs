@@ -14,11 +14,14 @@ namespace Domain
         public Funcionario()
         {
             CriadoEm = DateTime.Now;
+            Endereco = new Endereco();
+
         }
 
         public string Cargo { get; set; }
         public string Login { get; set; }
         public string Senha { get; set; }
+        public Endereco Endereco { get; set; }
 
         public override string ToString()
         {

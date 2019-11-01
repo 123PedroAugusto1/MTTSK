@@ -17,6 +17,7 @@ namespace Repository
         public DbSet<Projeto> Projetos { get; set; }
         public DbSet<Tarefa> Tarefas { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
+        public DbSet<Endereco> Enderecos { get; set; }
         //fim
     }
 }

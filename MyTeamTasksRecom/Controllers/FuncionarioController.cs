@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Repository;
 
 namespace MyTeamTasksRecom.Controllers
@@ -32,6 +34,10 @@ namespace MyTeamTasksRecom.Controllers
 
         public IActionResult Cadastrar()
         {
+            if (TempData["Endereco"]!= null) {
+                string resultado = TempData["Endereco"].ToString();
+            }
+                //Endereco endereco = JsonConvert.DeserializeObject<Endereco>(resultado);
             return View();
         }
 
@@ -40,6 +46,7 @@ namespace MyTeamTasksRecom.Controllers
             string txtDescricao, string txtPreco,
             string txtQuantidade)
         {
+                     
             Funcionario f = new Funcionario
             {
                 Nome = txtNome,
@@ -66,8 +73,14 @@ namespace MyTeamTasksRecom.Controllers
         {
             return RedirectToAction("index");
         }
+        [HttpPost]
+        public IActionResult BuscarCep(Funcionario f)
+        {
+            string url = "https://viacep.com.br/ws/"+ f.Endereco.Cep + "/json/";
+            WebClient client = new WebClient();
+            TempData["Endereco"] = client.DownloadString(url);
 
-
-
+            return RedirectToAction("Cadastrar");
+        }
     }
 }
