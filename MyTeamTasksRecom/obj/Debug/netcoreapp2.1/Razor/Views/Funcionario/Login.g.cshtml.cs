@@ -66,7 +66,7 @@ using Domain;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(58, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8af4fe052a22437dba2f6c71d9864bc0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "19cdc9d4ec5646dab8c4003208e9b206", async() => {
                 BeginContext(64, 87, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Login</title>\r\n");
                 EndContext();
@@ -86,12 +86,12 @@ using Domain;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(160, 1298, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "60e71478968943c39db88cf49e1113bb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7fbcb49376304517b3ffe50490df111d", async() => {
                 BeginContext(166, 149, true);
                 WriteLiteral("\r\n    <div class=\"box-parent-login\">\r\n        <div class=\"well bg-white box-login\">\r\n            <h1 class=\"ls-login-logo\">locaweb</h1>\r\n            ");
                 EndContext();
                 BeginContext(315, 1106, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d94ed1aa7fcf446c9bfcf020e60c3674", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a01b70c3e89456d85d2e8b2c5a85a2f", async() => {
                     BeginContext(333, 1081, true);
                     WriteLiteral(@"
                 <fieldset>

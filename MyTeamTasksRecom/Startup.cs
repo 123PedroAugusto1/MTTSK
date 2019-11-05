@@ -34,6 +34,9 @@ namespace MyTeamTasksRecom
 
             //Configurando a injeção de dependência
             services.AddScoped<FuncionarioDAO>();
+            services.AddScoped<ClienteDAO>();
+            services.AddScoped<ProjetoDAO>();
+            services.AddScoped<TarefaDAO>();
             services.AddDbContext<Context>
                 (options => options.UseSqlServer
                 (Configuration.GetConnectionString
@@ -65,7 +68,7 @@ namespace MyTeamTasksRecom
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Funcionario}/{action=index}/{id?}");
+                    template: "{controller=Cliente}/{action=Cadastrar}/{id?}");
             });
         }
     }

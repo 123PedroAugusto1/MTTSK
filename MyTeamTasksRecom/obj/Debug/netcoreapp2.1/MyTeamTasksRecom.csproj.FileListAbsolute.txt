@@ -45,7 +45,6 @@ C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.dll
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.pdb
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.csproj.CopyComplete
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Cadastrar.g.cshtml.cs
-C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Index.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Alterar.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutProjeto.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\Domain.dll
@@ -53,3 +52,6 @@ C:\ProjetoC#\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\Repository.dll
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\Domain.pdb
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\Repository.pdb
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Login.g.cshtml.cs
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Cadastrar.g.cshtml.cs
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\ListagemFuncionario.g.cshtml.cs
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\ListagemCliente.g.cshtml.cs

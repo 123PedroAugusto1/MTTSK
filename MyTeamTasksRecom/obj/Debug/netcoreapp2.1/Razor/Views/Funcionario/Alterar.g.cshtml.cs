@@ -64,7 +64,7 @@ using Domain;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(89, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e09f779db13f4c08938151341720aa27", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "53b52e173348436cb03cac4d9346233e", async() => {
                 BeginContext(95, 89, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Alterar</title>\r\n");
                 EndContext();
@@ -84,12 +84,12 @@ using Domain;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(193, 232, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d138e75de0f4b86938f5d7e99c6bc78", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "17895a989c9c4e428620aad1c258f703", async() => {
                 BeginContext(199, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(205, 211, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b27e3368e254c63bce73d993784efee", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5869bdcdabef44e887ef1f0283534bcf", async() => {
                     BeginContext(246, 73, true);
                     WriteLiteral("\r\n        <label>Nome:</label>\r\n        <input type=\"text\" name=\"txtNome\"");
                     EndContext();

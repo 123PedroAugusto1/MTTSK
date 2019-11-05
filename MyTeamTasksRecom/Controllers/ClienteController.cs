@@ -22,6 +22,11 @@ namespace MyTeamTasksRecom.Controllers
             _clienteDAO = clienteDAO;
 
         }
+        public IActionResult ListagemCliente()
+        {
+            ViewBag.Cliente = _clienteDAO.ListarTodos();
+            return View();
+        }
 
         public IActionResult Cadastrar()
         {
@@ -29,12 +34,12 @@ namespace MyTeamTasksRecom.Controllers
         }
 
         [HttpPost]
-        public IActionResult Cadastrar(string txtNome)
+        public IActionResult Cadastrar(string Nome)
         {
             Cliente cliente = new Cliente
             {
-                Nome = txtNome,
-
+                Nome = Nome
+         
             };
             _clienteDAO.Cadastrar(cliente);
             
@@ -45,8 +50,9 @@ namespace MyTeamTasksRecom.Controllers
         {
 
             _clienteDAO.Remover(id);
-            return RedirectToAction("index");
+            return RedirectToAction("ListagemCliente");
         }
+
         //public IActionResult Alterar(int? id)
         //{
         //    ViewBag.Funcionario = _funcionarioDAO.BuscarFuncionarioPorId(id);

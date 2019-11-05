@@ -20,7 +20,7 @@ namespace MyTeamTasksRecom.Controllers
 
         }
 
-        public IActionResult Index()
+        public IActionResult ListagemFuncionario()
         {
             ViewBag.Funcionarios = _funcionarioDAO.Listar();
             return View();
@@ -34,24 +34,26 @@ namespace MyTeamTasksRecom.Controllers
 
         public IActionResult Cadastrar()
         {
+            Funcionario funcionario = new Funcionario();
             if (TempData["Endereco"]!= null) {
                 string resultado = TempData["Endereco"].ToString();
-            }
-                //Endereco endereco = JsonConvert.DeserializeObject<Endereco>(resultado);
-            return View();
+                Endereco endereco = JsonConvert.DeserializeObject<Endereco>(resultado);
+                funcionario.Endereco = endereco;
+            }           
+            return View(funcionario);
         }
 
         [HttpPost]
-        public IActionResult Cadastrar(string txtNome,
-            string txtDescricao, string txtPreco,
-            string txtQuantidade)
+        public IActionResult Cadastrar(string Nome,string Cargo, string Login, string senha)
         {
-                     
+
             Funcionario f = new Funcionario
             {
-                Nome = txtNome,
-
-
+                Nome = Nome,
+                Cargo = Cargo,
+                Login = Login,
+                Senha = senha
+               
             };
             _funcionarioDAO.Cadastrar(f);
             return View();

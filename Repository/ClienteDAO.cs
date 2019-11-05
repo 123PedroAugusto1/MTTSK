@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class ClienteDAO
+    public class ClienteDAO: IRepository<Cliente>
     {
         private readonly Context _context;
 
@@ -21,10 +21,6 @@ namespace Repository
             _context.Clientes.Add(cliente);
             _context.SaveChanges();
 
-        }
-        public List<Cliente> Listar()
-        {
-            return _context.Clientes.ToList();
         }
         public Cliente BuscarClientePorId(int? id)
         {
@@ -41,6 +37,21 @@ namespace Repository
         {
             _context.Entry(funcionario).State = EntityState.Modified;
             _context.SaveChanges();
+        }
+
+        bool IRepository<Cliente>.Cadastrar(Cliente objeto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Cliente> ListarTodos()
+        {
+            return _context.Clientes.ToList();
+        }
+
+        public Cliente BuscarPorId(int? id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

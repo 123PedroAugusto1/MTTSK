@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyTeamTasksRecom", "MyTeamTasksRecom\MyTeamTasksRecom.csproj", "{8A10317B-B9A3-45B4-A9BC-1445AE2B7E54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{134A8F30-5D1A-4DA7-8D63-A410396A5DEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{134A8F30-5D1A-4DA7-8D63-A410396A5DEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{25BB5C36-25B8-408C-B434-B85DFA61CE00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{25BB5C36-25B8-408C-B434-B85DFA61CE00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

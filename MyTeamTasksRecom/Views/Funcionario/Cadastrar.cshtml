@@ -10,14 +10,14 @@
         <div class="form-group">
             <label asp-for="Endereco.Cep"></label>
             <input type="text" class="form-control" asp-for="Endereco.Cep" />
-            
+
         </div>
         <input type="submit" class="btn btn-info" value="Buscar" asp-action="BuscarCep" asp-controller="Funcionario" />
         <div class="form-group">
             <label asp-for="Endereco.Logradouro"></label>
             <input type="text" class="form-control" asp-for="Endereco.Logradouro" />
         </div>
-      
+
         <div class="form-group">
             <label asp-for="Endereco.Bairro"></label>
             <input type="text" class="form-control" asp-for="Endereco.Bairro" />
@@ -30,16 +30,34 @@
         </div>
     </fieldset>
     <fieldset>
-        <div class="form-group">
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome" name="txtNome" /><br />
-
-            <input type="text" class="form-control" id="Login" aria-describedby="Login" placeholder="Login" name="txtLogin" /><br />
-
-            <input type="text" class="form-control" id="Senha" aria-describedby="Senha" placeholder="Senha" name="txtSenha" /><br />
-
-
-            <input type="submit" value="Cadastrar" class="btn btn-primary" />
+        <legend>Cadastrar Funcionario</legend>
+        <div asp-validation-summary="ModelOnly"
+             class="text-primary"></div>
+        <div class="form-group" id="Nome">
+            <label asp-for="Nome"></label>
+            <input type="text" asp-for="Nome"
+                   class="form-control" />
+            <span asp-validation-for="Nome"
+                  class="text-primary"></span>
         </div>
+        <div class="form-group" id="Descricao">
+            <label asp-for="Cargo"></label>
+            <input type="text" asp-for="Cargo"
+                   class="form-control" />
+        </div>
+        <div class="form-group" id="Preco">
+            <label asp-for="Login"></label>
+            <input type="text" asp-for="Login"
+                   class="form-control" />
+        </div>
+        <div class="form-group" id="Quantidade">
+            <label asp-for="Senha"></label>
+            <input type="text" asp-for="Senha"
+                   class="form-control" />
+        </div>
+        <input type="submit" class="btn btn-success"
+               value="Cadastrar" />
     </fieldset>
 </form>
+
 
