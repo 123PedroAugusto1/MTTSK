@@ -27,7 +27,8 @@ namespace Repository.Migrations
 
                     b.Property<DateTime>("CriadoEm");
 
-                    b.Property<string>("Nome");
+                    b.Property<string>("Nome")
+                        .IsRequired();
 
                     b.HasKey("PessoaId");
 
@@ -61,17 +62,20 @@ namespace Repository.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Cargo");
+                    b.Property<int>("Cargo");
 
                     b.Property<DateTime>("CriadoEm");
 
                     b.Property<int?>("Enderecoid");
 
-                    b.Property<string>("Login");
+                    b.Property<string>("Login")
+                        .IsRequired();
 
-                    b.Property<string>("Nome");
+                    b.Property<string>("Nome")
+                        .IsRequired();
 
-                    b.Property<string>("Senha");
+                    b.Property<string>("Senha")
+                        .IsRequired();
 
                     b.HasKey("PessoaId");
 

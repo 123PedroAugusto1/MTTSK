@@ -18,8 +18,12 @@ namespace Domain
 
         }
 
-        public string Cargo { get; set; }
+        public int Cargo { get; set; }
+        [Display(Name = "Login:")]
+        [Required(ErrorMessage = "Campo obrigatório!")]
         public string Login { get; set; }
+        [Display(Name = "Senha:")]
+        [Required(ErrorMessage = "Campo obrigatório!")]
         public string Senha { get; set; }
         public Endereco Endereco { get; set; }
 

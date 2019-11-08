@@ -6,29 +6,8 @@
 }
 
 <form asp-action="Cadastrar" method="post">
-    <fieldset>
-        <div class="form-group">
-            <label asp-for="Endereco.Cep"></label>
-            <input type="text" class="form-control" asp-for="Endereco.Cep" />
-
-        </div>
-        <input type="submit" class="btn btn-info" value="Buscar" asp-action="BuscarCep" asp-controller="Funcionario" />
-        <div class="form-group">
-            <label asp-for="Endereco.Logradouro"></label>
-            <input type="text" class="form-control" asp-for="Endereco.Logradouro" />
-        </div>
-
-        <div class="form-group">
-            <label asp-for="Endereco.Bairro"></label>
-            <input type="text" class="form-control" asp-for="Endereco.Bairro" />
-
-        </div>
-
-        <div class="form-group">
-            <label asp-for="Endereco.Uf"></label>
-            <input type="text" class="form-control" asp-for="Endereco.Uf" />
-        </div>
-    </fieldset>
+  
+    
     <fieldset>
         <legend>Cadastrar Funcionario</legend>
         <div asp-validation-summary="ModelOnly"
@@ -40,23 +19,33 @@
             <span asp-validation-for="Nome"
                   class="text-primary"></span>
         </div>
-        <div class="form-group" id="Descricao">
-            <label asp-for="Cargo"></label>
-            <input type="text" asp-for="Cargo"
-                   class="form-control" />
+        <div id="Cargo" class="form-group">
+            <label>Categoria:</label>
+            <select asp-for="Cargo" class="form-control" name="Cargo">
+                <option value="0"> -- SELECIONE -- </option>
+                <option value="1">Administrador</option>
+                <option value="2"> Gestor de projetos</option>
+                <option value="3"> Desenvolvedor </option>
+            </select>
         </div>
         <div class="form-group" id="Preco">
             <label asp-for="Login"></label>
             <input type="text" asp-for="Login"
                    class="form-control" />
+            <span asp-validation-for="Login"
+                  class="text-primary"></span>
         </div>
         <div class="form-group" id="Quantidade">
             <label asp-for="Senha"></label>
-            <input type="text" asp-for="Senha"
+            <input type="password" asp-for="Senha"
                    class="form-control" />
+            <span asp-validation-for="Senha"
+                  class="text-primary"></span>S
         </div>
+
+
         <input type="submit" class="btn btn-success"
-               value="Cadastrar" />
+               value="Cadastrar"  />
     </fieldset>
 </form>
 

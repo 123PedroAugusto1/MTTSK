@@ -18,9 +18,16 @@ namespace Repository
            
         public bool Cadastrar(Funcionario funcionario)
         {
-            _context.Funcionarios.Add(funcionario);
-            _context.SaveChanges();
-            return true;
+            try
+            {
+                _context.Funcionarios.Add(funcionario);
+                _context.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
         public List<Funcionario> Listar()
         {

@@ -68,7 +68,7 @@ namespace MyTeamTasksRecom
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Cliente}/{action=Cadastrar}/{id?}");
+                    template: "{controller=Funcionario}/{action=Cadastrar}/{id?}");
             });
         }
     }

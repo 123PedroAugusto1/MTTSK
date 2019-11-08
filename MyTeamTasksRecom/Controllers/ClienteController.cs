@@ -34,14 +34,10 @@ namespace MyTeamTasksRecom.Controllers
         }
 
         [HttpPost]
-        public IActionResult Cadastrar(string Nome)
+        public IActionResult Cadastrar(Cliente c)
         {
-            Cliente cliente = new Cliente
-            {
-                Nome = Nome
-         
-            };
-            _clienteDAO.Cadastrar(cliente);
+            
+            _clienteDAO.Cadastrar(c);
             
             return View();
         }

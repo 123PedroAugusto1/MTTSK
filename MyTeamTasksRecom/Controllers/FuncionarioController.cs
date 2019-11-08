@@ -5,6 +5,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using Repository;
 
@@ -44,19 +45,21 @@ namespace MyTeamTasksRecom.Controllers
         }
 
         [HttpPost]
-        public IActionResult Cadastrar(string Nome,string Cargo, string Login, string senha)
+        public IActionResult Cadastrar(Funcionario f)
         {
 
-            Funcionario f = new Funcionario
+           
+            if (ModelState.IsValid)
             {
-                Nome = Nome,
-                Cargo = Cargo,
-                Login = Login,
-                Senha = senha
-               
-            };
-            _funcionarioDAO.Cadastrar(f);
-            return View();
+                if (_funcionarioDAO.Cadastrar(f))
+                {
+                    return RedirectToAction("ListagemFuncionario");
+                }
+                ModelState.AddModelError
+                   ("", "");
+                return View(f);
+            }
+            return View(f);
         }
 
         public IActionResult Remover(int id)

@@ -15,6 +15,8 @@ namespace Domain
         }
         [Key]
         public int PessoaId { get; set; }
+        [Display(Name = "Nome:")]
+        [Required(ErrorMessage = "Campo obrigatório!")]
         public string Nome { get; set; }
         public DateTime CriadoEm { get; set; }
 

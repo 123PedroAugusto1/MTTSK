@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class ProjetoDAO
+    public class ProjetoDAO : IRepository<Projeto>
     {
         private readonly Context _context;
 
@@ -63,6 +63,21 @@ namespace Repository
             {
                 return false;
             }
+        }
+
+        public bool Cadastrar(Projeto objeto)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Projeto> ListarTodos()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Projeto BuscarPorId(int? id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

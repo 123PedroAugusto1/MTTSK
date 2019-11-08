@@ -67,7 +67,7 @@ using Domain;
             WriteLiteral("\r\n<div class=\"container\" style=\"margin-top:30px;margin-bottom:30px\">\r\n    <h2>Gerenciamento</h2>\r\n    ");
             EndContext();
             BeginContext(211, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc48e5376b404d949c3ab050692dba43", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "280fda3bb6af4ddfa0c939858b6b1a9d", async() => {
                 BeginContext(261, 9, true);
                 WriteLiteral("Cadastrar");
                 EndContext();
@@ -109,7 +109,7 @@ using Domain;
             WriteLiteral("</td>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(692, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e1cac4c7ada4642ac7f6848f53dcb91", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f582053a8434b00a91474e6cc36046a", async() => {
                 BeginContext(749, 7, true);
                 WriteLiteral("Remover");
                 EndContext();
@@ -144,7 +144,7 @@ using Domain;
             WriteLiteral("\r\n                        ");
             EndContext();
             BeginContext(786, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "021f4c2b44c0475581b2328e51d37f04", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1f5918c2e184dad83f288336990b620", async() => {
                 BeginContext(843, 7, true);
                 WriteLiteral("Alterar");
                 EndContext();
