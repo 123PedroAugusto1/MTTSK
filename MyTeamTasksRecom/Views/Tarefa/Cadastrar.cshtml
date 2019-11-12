@@ -1,4 +1,4 @@
-﻿@model Projeto
+﻿@model Tarefa
 @{
 
     Layout = "~/Views/Shared/LayoutProjeto.cshtml";
@@ -7,25 +7,25 @@
 
 <form asp-action="Cadastrar" method="post">
     <fieldset>
-        <legend>Cadastrar Projeto</legend>
+        <legend>Cadastrar Tarefa</legend>
         <div asp-validation-summary="ModelOnly"
              class="text-primary"></div>
 
         <div class="form-group" id="Nome">
-            <label asp-for="Nome"></label>
-            <input type="text" asp-for="Nome"
+            <label asp-for="Titulo"></label>
+            <input type="text" asp-for="Titulo"
                    class="form-control" />
-            <span asp-validation-for="Nome"
+            <span asp-validation-for="Titulo"
                   class="text-primary"></span>
         </div>
-        <div id="Cliente" class="form-group">
-            <label>Cliente:</label>
-            <select asp-items="@ViewBag.Clientes"
-                    class="form-control" name="idCliente">
+        <div id="Projeto" class="form-group">
+            <label>Projeto:</label>
+            <select asp-items="@ViewBag.Projetos"
+                    class="form-control" name="idProjeto">
                 <option> -- SELECIONE -- </option>
             </select>
         </div>
-        <div class="form-group" id="Nome">
+        <div class="form-group" id="Status">
             <label asp-for="Status"></label>
             <input type="text" asp-for="Status"
                    class="form-control" />

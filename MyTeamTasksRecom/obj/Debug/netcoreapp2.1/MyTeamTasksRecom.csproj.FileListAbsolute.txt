@@ -56,3 +56,4 @@ C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\ListagemFuncionario.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\ListagemCliente.g.cshtml.cs
 C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Projeto\Cadastrar.g.cshtml.cs
+C:\ProjetoC#\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Tarefa\Cadastrar.g.cshtml.cs

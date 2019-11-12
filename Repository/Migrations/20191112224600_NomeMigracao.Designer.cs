@@ -10,8 +10,8 @@ using Repository;
 namespace Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191107230311_nome")]
-    partial class nome
+    [Migration("20191112224600_NomeMigracao")]
+    partial class NomeMigracao
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

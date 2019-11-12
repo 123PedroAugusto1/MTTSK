@@ -21,7 +21,6 @@ namespace Repository
             _context.SaveChanges();
         }
 
-        public List<Projeto> ListarProjetos() => _context.Projetos.ToList();
 
         public Projeto BuscarProjetoPorNome(string nome)
         {
@@ -72,7 +71,7 @@ namespace Repository
 
         public List<Projeto> ListarTodos()
         {
-            throw new NotImplementedException();
+            return _context.Projetos.ToList();
         }
 
         public Projeto BuscarPorId(int? id)

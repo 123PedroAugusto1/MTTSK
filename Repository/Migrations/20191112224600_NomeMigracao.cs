@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Repository.Migrations
 {
-    public partial class nome : Migration
+    public partial class NomeMigracao : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
