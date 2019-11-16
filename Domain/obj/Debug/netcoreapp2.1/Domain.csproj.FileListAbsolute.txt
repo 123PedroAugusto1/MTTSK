@@ -6,3 +6,12 @@ C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cach
 C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
 C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.dll
 C:\ProjetoC#\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.pdb
+C:\git\MTTSK\Domain\bin\Debug\netcoreapp2.1\Domain.deps.json
+C:\git\MTTSK\Domain\bin\Debug\netcoreapp2.1\Domain.dll
+C:\git\MTTSK\Domain\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\git\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache
+C:\git\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.csproj.CoreCompileInputs.cache
+C:\git\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfoInputs.cache
+C:\git\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
+C:\git\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.dll
+C:\git\MTTSK\Domain\obj\Debug\netcoreapp2.1\Domain.pdb

@@ -44,18 +44,13 @@ namespace Repository
             _context.SaveChanges();
         }
 
-        public void Alterar(Funcionario funcionario)
-        {           
-            _context.Entry(funcionario).State = EntityState.Modified;
+        public void Alterar(Funcionario f)
+        {
+            _context.Funcionarios.Update(f);
             _context.SaveChanges();
         }
 
         public List<Funcionario> ListarTodos()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Funcionario BuscarPorId(int id)
         {
             throw new NotImplementedException();
         }

@@ -66,17 +66,18 @@ namespace MyTeamTasksRecom.Controllers
         {
       
             _funcionarioDAO.Remover(id);
-            return RedirectToAction("index");
+            return RedirectToAction("ListagemFuncionario");
         }
         public IActionResult Alterar(int ? id)
         {
-            ViewBag.Funcionario = _funcionarioDAO.BuscarFuncionarioPorId(id);
-            return RedirectToAction("Alterar");
+            
+            return View(_funcionarioDAO.BuscarFuncionarioPorId(id));
         }
         [HttpPost]
-        public IActionResult Alterar(String txtNome)
+        public IActionResult Alterar(Funcionario f)
         {
-            return RedirectToAction("index");
+            _funcionarioDAO.Alterar(f);
+            return RedirectToAction("ListagemFuncionario");
         }
         [HttpPost]
         public IActionResult BuscarCep(Funcionario f)

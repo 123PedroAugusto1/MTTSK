@@ -68,7 +68,7 @@ namespace MyTeamTasksRecom
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Tarefa}/{action=Cadastrar}/{id?}");
+                    template: "{controller=Menu}/{action=Menu}/{id?}");
             });
         }
     }
