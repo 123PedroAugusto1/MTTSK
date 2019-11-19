@@ -36,6 +36,11 @@ namespace MyTeamTasksRecom.Controllers
             return View();
         }
 
+        public IActionResult ListagemTarefa()
+        {
+            return View();
+        }
+
 
         [HttpPost]
         public IActionResult Cadastrar(Tarefa t, int idProjeto)

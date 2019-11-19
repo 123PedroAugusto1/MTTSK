@@ -32,7 +32,14 @@ namespace MyTeamTasksRecom.Controllers
             return View();
         }
 
-
+        public IActionResult MenuAdm()
+        {
+            return View();
+        }
+        public IActionResult MenuGestor()
+        {
+            return View();
+        }
         public IActionResult Cadastrar()
         {
             Funcionario funcionario = new Funcionario();

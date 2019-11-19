@@ -12,19 +12,5 @@ namespace MyTeamTasksRecom.Controllers
         {
             return View();
         }
-        public IActionResult MenuCadastrosFuncionarios()
-        {
-            return View();
-        }
-
-        public IActionResult MenuCadastrosClientes()
-        {
-            return View();
-        }
-
-        public IActionResult MenuCadastrosProjetos()
-        {
-            return View();
-        }
     }
 }

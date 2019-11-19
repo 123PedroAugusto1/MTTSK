@@ -94,6 +94,10 @@ C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.csproj.Co
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.dll
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.pdb
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Menu\Menu.g.cshtml.cs
-C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Menu\MenuCadastrosClientes.g.cshtml.cs
-C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Menu\MenuCadastrosFuncionarios.g.cshtml.cs
-C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Menu\MenuCadastrosProjetos.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Projeto\ListagemProjetos.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutDev.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Tarefa\ListagemTarefa.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutAdm.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuAdm.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuAdmListagem.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutGestao.g.cshtml.cs

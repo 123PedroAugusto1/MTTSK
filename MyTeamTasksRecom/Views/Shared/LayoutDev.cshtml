@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">MyTeamTasks Recomeço</a>
+
+        <div class="collapse navbar-collapse" id="navbarColor01" style="text-align:center">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a asp-controller="Tarefa" asp-action="ListagemTarefa" class="nav-link" >Tarefas <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="m-5">
+        @RenderBody()
+    </div>
+    <footer>
+        <p style="text-align:center">
+            &copy;@DateTime.Now.Year - Desenvolvido por Pedro Augusto e Ronaldo Gomes
+        </p>
+    </footer>
+</body>
+</html>
