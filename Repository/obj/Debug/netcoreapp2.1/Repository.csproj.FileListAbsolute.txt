@@ -22,3 +22,15 @@ C:\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
 C:\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 C:\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+C:\Ronaldo\git\MTTSK\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+C:\Ronaldo\git\MTTSK\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Ronaldo\git\MTTSK\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\Ronaldo\git\MTTSK\Repository\bin\Debug\netcoreapp2.1\Domain.dll
+C:\Ronaldo\git\MTTSK\Repository\bin\Debug\netcoreapp2.1\Domain.pdb
+C:\Ronaldo\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+C:\Ronaldo\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+C:\Ronaldo\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+C:\Ronaldo\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+C:\Ronaldo\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+C:\Ronaldo\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+C:\Ronaldo\git\MTTSK\Repository\obj\Debug\netcoreapp2.1\Repository.pdb

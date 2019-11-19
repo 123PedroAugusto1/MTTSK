@@ -12580,11 +12580,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
+      "projectUniqueName": "C:\\Ronaldo\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
       "projectName": "MyTeamTasksRecom",
-      "projectPath": "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
+      "projectPath": "C:\\Ronaldo\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\MTTSK\\MyTeamTasksRecom\\obj\\",
+      "outputPath": "C:\\Ronaldo\\git\\MTTSK\\MyTeamTasksRecom\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -12605,11 +12605,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj"
+            "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj"
             },
-            "C:\\git\\MTTSK\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\git\\MTTSK\\Repository\\Repository.csproj"
+            "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj"
             }
           }
         }

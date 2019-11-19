@@ -3491,11 +3491,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\MTTSK\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\git\\MTTSK\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\MTTSK\\Repository\\obj\\",
+      "outputPath": "C:\\Ronaldo\\git\\MTTSK\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -3516,8 +3516,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj"
+            "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj"
             }
           }
         }

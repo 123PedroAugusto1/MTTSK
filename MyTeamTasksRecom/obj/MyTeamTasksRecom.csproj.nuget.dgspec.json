@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj": {}
+    "C:\\Ronaldo\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj": {}
   },
   "projects": {
-    "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
+    "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MTTSK\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MTTSK\\Domain\\obj\\",
+        "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -56,21 +58,23 @@
         }
       }
     },
-    "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj": {
+    "C:\\Ronaldo\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
+        "projectUniqueName": "C:\\Ronaldo\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
         "projectName": "MyTeamTasksRecom",
-        "projectPath": "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
-        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MTTSK\\MyTeamTasksRecom\\obj\\",
+        "projectPath": "C:\\Ronaldo\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Ronaldo\\git\\MTTSK\\MyTeamTasksRecom\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -82,11 +86,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj"
+              "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj"
               },
-              "C:\\git\\MTTSK\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\git\\MTTSK\\Repository\\Repository.csproj"
+              "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj"
               }
             }
           }
@@ -129,21 +133,23 @@
         }
       }
     },
-    "C:\\git\\MTTSK\\Repository\\Repository.csproj": {
+    "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MTTSK\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\git\\MTTSK\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MTTSK\\Repository\\obj\\",
+        "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Ronaldo\\git\\MTTSK\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -155,8 +161,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj"
+              "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj"
               }
             }
           }

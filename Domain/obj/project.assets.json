@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\MTTSK\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\MTTSK\\Domain\\obj\\",
+      "outputPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
