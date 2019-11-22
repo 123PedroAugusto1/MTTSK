@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Identity.SignInManager<UsuarioLogado> SignManager
+@inject Microsoft.AspNetCore.Identity.UserManager<UsuarioLogado> UserManager
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -13,8 +15,8 @@
         <div class="collapse navbar-collapse" id="navbarColor01" style="text-align:center">
             <ul class="navbar-nav mr-auto">
                 @*<li class="nav-item active">
-                    <a asp-controller="Tarefa" asp-action="ListagemTarefa" class="nav-link">Menus <span class="sr-only">(current)</span></a>
-                </li>*@
+                <a asp-controller="Tarefa" asp-action="ListagemTarefa" class="nav-link">Menus <span class="sr-only">(current)</span></a>
+            </li>*@
                 <li class="nav-item active">
                     <a asp-controller="Funcionario" asp-action="MenuAdm" class="nav-link">Cadastros <span class="sr-only">(current)</span></a>
                 </li>
@@ -22,6 +24,22 @@
                     <a asp-controller="Funcionario" asp-action="MenuAdmListagem" class="nav-link">Listagem <span class="sr-only">(current)</span></a>
                 </li>
 
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                @if (SignManager.IsSignedIn(User))
+                {
+                <li class="nav-item active">
+                    <a asp-controller="Funcionario" asp-action="Logout"
+                       class="nav-link">Olá @UserManager.GetUserName(User) -Logout<span class="sr-only">(current)</span></a>
+                </li>
+                }
+                else
+                {
+                <li class="nav-item active">
+                    <a asp-controller="Funcionario" asp-action="Login"
+                       class="nav-link">Login<span class="sr-only">(current)</span></a>
+                </li>
+                }
             </ul>
         </div>
     </nav>

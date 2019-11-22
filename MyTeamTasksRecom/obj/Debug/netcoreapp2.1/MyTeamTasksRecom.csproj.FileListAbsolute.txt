@@ -100,7 +100,6 @@ C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Tarefa\Listage
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutAdm.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuAdm.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuAdmListagem.g.cshtml.cs
-C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutGestao.g.cshtml.cs
 C:\Ronaldo\git\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\MyTeamTasksRecom.deps.json
 C:\Ronaldo\git\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\MyTeamTasksRecom.runtimeconfig.json
 C:\Ronaldo\git\MTTSK\MyTeamTasksRecom\bin\Debug\netcoreapp2.1\MyTeamTasksRecom.runtimeconfig.dev.json
@@ -146,3 +145,6 @@ C:\Ronaldo\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.V
 C:\Ronaldo\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.csproj.CopyComplete
 C:\Ronaldo\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.dll
 C:\Ronaldo\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.pdb
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuGestor.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutGestor.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LayoutLogin.g.cshtml.cs
