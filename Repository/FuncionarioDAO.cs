@@ -52,7 +52,7 @@ namespace Repository
 
         public List<Funcionario> ListarTodos()
         {
-            throw new NotImplementedException();
+            return _context.Funcionarios.ToList();
         }
 
         public Funcionario BuscarPorId(int? id)
