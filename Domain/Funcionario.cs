@@ -15,6 +15,7 @@ namespace Domain
         {
             CriadoEm = DateTime.Now;
             Endereco = new Endereco();
+            Status = 1;
 
         }
 
@@ -26,6 +27,8 @@ namespace Domain
         [Required(ErrorMessage = "Campo obrigatório!")]
         public string Senha { get; set; }
         public Endereco Endereco { get; set; }
+
+        public int Status { get; set; }
 
         public override string ToString()
         {

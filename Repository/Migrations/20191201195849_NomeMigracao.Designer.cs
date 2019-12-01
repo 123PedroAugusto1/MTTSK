@@ -10,7 +10,7 @@ using Repository;
 namespace Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20191126223543_NomeMigracao")]
+    [Migration("20191201195849_NomeMigracao")]
     partial class NomeMigracao
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,6 +78,8 @@ namespace Repository.Migrations
 
                     b.Property<string>("Senha")
                         .IsRequired();
+
+                    b.Property<int>("Status");
 
                     b.HasKey("PessoaId");
 

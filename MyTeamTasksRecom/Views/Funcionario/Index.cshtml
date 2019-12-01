@@ -1,0 +1,31 @@
+﻿
+@{
+    var permicao = ViewBag.Permicao;
+
+    if (permicao.Equals(1))
+    {
+         Layout = "~/Views/Shared/LayoutAdm.cshtml";
+    
+    } else if (permicao.Equals(2))
+    {
+        Layout = "~/Views/Shared/LayoutGestor.cshtml";
+    }
+    else if(permicao.Equals(3))
+    {
+         Layout = "~/Views/Shared/LayoutDev.cshtml";
+
+    }
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    CARAlhoooooooooooooooooooooooooooooooooooooooooo    
+</body>
+</html>

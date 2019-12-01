@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj": {}
+    "C:\\git\\MTTSK\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj": {
+    "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\git\\MTTSK\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Ronaldo\\git\\MTTSK\\Domain\\obj\\",
+        "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\MTTSK\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -43,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.6, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",

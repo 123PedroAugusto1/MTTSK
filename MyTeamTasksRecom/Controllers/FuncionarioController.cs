@@ -39,7 +39,15 @@ namespace MyTeamTasksRecom.Controllers
 
             return View();
         }
+        public IActionResult Index()
+        {
 
+            return View();
+        }
+        public IActionResult DesativarFuncionario()
+        {
+            return View();
+        }
         public IActionResult MenuAdm()
         {
             return View();
@@ -58,12 +66,43 @@ namespace MyTeamTasksRecom.Controllers
             }
             return View(funcionario);
         }
+        [HttpPost]
+        public async Task<IActionResult> Login(String login, String senha)
+        {
+            if (ModelState.IsValid)
+            {
+
+                Funcionario f = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
+                if (f.Cargo.Equals(1))
+                {
+                    ViewBag.Permicao = 1; 
+                }else if (f.Cargo.Equals(2))
+                {
+                    ViewBag.Permicao = 2;
+
+                }
+                else if(f.Cargo.Equals(3))
+                {
+                    ViewBag.Permicao = 3;
+
+                }
+
+                UsuarioLogado usuarioLogado = new UsuarioLogado
+                {
+                    Email = login,
+                    UserName = login
+
+                }; 
+                await _signInManager.SignInAsync(usuarioLogado, isPersistent: false);
+                return RedirectToAction("Index");
+             }
+            return View();
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> Cadastrar(Funcionario f)
         {
-
-
             if (ModelState.IsValid)
             {
                 UsuarioLogado usuarioLogado = new UsuarioLogado
@@ -77,7 +116,6 @@ namespace MyTeamTasksRecom.Controllers
 
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(usuarioLogado, isPersistent: false);
                     if (_funcionarioDAO.Cadastrar(f))
                     {
                         return RedirectToAction("ListagemFuncionario");
@@ -94,6 +132,7 @@ namespace MyTeamTasksRecom.Controllers
             }
             return View(f);
         }
+
         private void AdicionarErros(IdentityResult result)
         {
             foreach (var erro in result.Errors)
@@ -131,19 +170,17 @@ namespace MyTeamTasksRecom.Controllers
             TempData["Endereco"] = client.DownloadString(url);
 
             return RedirectToAction("Cadastrar");
+
         }
-        public async Task<IActionResult> Login(Funcionario f)
+
+        [HttpPost]
+        public async Task<IActionResult> BucarFuncionarioPorLogin(String login)
         {
+            WebClient client = new WebClient();
+            TempData["BuscaFunci"] = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
 
-            var result = await _signInManager.PasswordSignInAsync(f.Login,
-                                                                    f.Senha, true, 
-                                                                    lockoutOnFailure: false);
-            if (result.Succeeded) {
-                return RedirectToAction("Cadastrar");
-            }
-            ModelState.AddModelError("","Falha no login!!!");
-            return View();
-
+            return RedirectToAction("DesativarFuncionario");
         }
+
     }
 }

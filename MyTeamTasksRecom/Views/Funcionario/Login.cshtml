@@ -1,4 +1,4 @@
-﻿
+﻿@model Funcionario
 @{
     Layout = "~/Views/Shared/LayoutLogin.cshtml";
 
@@ -15,22 +15,32 @@
     <div class="box-parent-login">
         <div class="well bg-white box-login">
             <h1 class="ls-login-logo">My Team Tasks</h1>
-            <form role="form">
+            <form asp-action="Login" method="post">
                 <fieldset>
 
-                    <div class="form-group ls-login-user">
-                        <label for="userLogin">Usuário</label>
-                        <input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
+                    <div class="form-group ls-login-password">
+                        <label asp-for="Login">Login</label>
+                        <input type="Text"
+                               asp-for="Login"
+                               class="form-control ls-login-bg-password input-lg"
+                               aria-label="Login"
+                               placeholder="Login">
+
                     </div>
 
                     <div class="form-group ls-login-password">
-                        <label for="userPassword">Senha</label>
-                        <input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
+                        <label asp-for="Senha">Senha</label>
+                        <input type="text"
+                               asp-for="Senha"
+                               class="form-control ls-login-bg-password input-lg"
+                               aria-label="Senha"
+                               placeholder="Senha">
+
                     </div>
 
+                    <input type="submit" class="btn btn-success"
+                           value="Entrar" />
 
-                    <input type="submit" value="Entrar" class="btn btn-primary btn-lg btn-block">
-                    
                 </fieldset>
             </form>
         </div>

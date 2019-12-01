@@ -77,6 +77,8 @@ namespace Repository.Migrations
                     b.Property<string>("Senha")
                         .IsRequired();
 
+                    b.Property<int>("Status");
+
                     b.HasKey("PessoaId");
 
                     b.HasIndex("Enderecoid");

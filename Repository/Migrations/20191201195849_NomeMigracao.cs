@@ -217,7 +217,8 @@ namespace Repository.Migrations
                     Cargo = table.Column<int>(nullable: false),
                     Login = table.Column<string>(nullable: false),
                     Senha = table.Column<string>(nullable: false),
-                    Enderecoid = table.Column<int>(nullable: true)
+                    Enderecoid = table.Column<int>(nullable: true),
+                    Status = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

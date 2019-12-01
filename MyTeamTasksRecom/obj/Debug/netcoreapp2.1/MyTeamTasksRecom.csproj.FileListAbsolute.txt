@@ -148,3 +148,6 @@ C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.Views.pdb
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.csproj.CopyComplete
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.dll
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.pdb
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Index.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\DesativarFuncionario.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuDev.g.cshtml.cs
