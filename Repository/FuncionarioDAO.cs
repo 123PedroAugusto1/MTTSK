@@ -54,6 +54,18 @@ namespace Repository
             _context.Funcionarios.Update(f);
             _context.SaveChanges();
         }
+        public void Desativar(Funcionario f)
+        {
+            f.Status = 0;
+            _context.Funcionarios.Update(f);
+            _context.SaveChanges();
+        }
+        public void Ativar(Funcionario f)
+        {
+            f.Status = 1;
+            _context.Funcionarios.Update(f);
+            _context.SaveChanges();
+        }
 
         public List<Funcionario> ListarTodos()
         {

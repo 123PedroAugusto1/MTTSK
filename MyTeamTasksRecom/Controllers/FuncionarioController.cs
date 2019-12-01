@@ -44,6 +44,11 @@ namespace MyTeamTasksRecom.Controllers
 
             return View();
         }
+        public IActionResult AtivarFuncionario()
+        {
+
+            return View();
+        }
         public IActionResult DesativarFuncionario()
         {
             return View();
@@ -176,11 +181,26 @@ namespace MyTeamTasksRecom.Controllers
         [HttpPost]
         public async Task<IActionResult> BucarFuncionarioPorLogin(String login)
         {
-            WebClient client = new WebClient();
             TempData["BuscaFunci"] = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
 
             return RedirectToAction("DesativarFuncionario");
         }
+        [HttpPost]
+        public async Task<IActionResult> DesativarFuncionario(String login)
+        {
+            var f = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
+
+            _funcionarioDAO.Desativar(f);
+            return RedirectToAction("DesativarFuncionario");
+        }
+        [HttpPost]
+        public async Task<IActionResult> AtivarFuncionario(String login)
+        {
+            var f = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
+            _funcionarioDAO.Ativar(f);
+            return RedirectToAction("AtivarFuncionario");
+        }
+
 
     }
 }
