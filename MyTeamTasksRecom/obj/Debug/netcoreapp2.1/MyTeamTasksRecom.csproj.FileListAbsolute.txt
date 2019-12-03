@@ -129,7 +129,6 @@ C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Ca
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\ListagemFuncionario.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Login.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuAdm.g.cshtml.cs
-C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuAdmListagem.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuGestor.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Menu\Menu.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Projeto\Cadastrar.g.cshtml.cs
@@ -151,3 +150,4 @@ C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\MyTeamTasksRecom.pdb
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\Index.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\DesativarFuncionario.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuDev.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\AtivarFuncionario.g.cshtml.cs

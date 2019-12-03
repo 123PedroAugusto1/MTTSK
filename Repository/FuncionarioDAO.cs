@@ -38,9 +38,9 @@ namespace Repository
             return _context.Funcionarios.Find(id);
         }
 
-        public Funcionario BuscarFuncionarioPorLogin(String Login )
+        public Funcionario BuscarFuncionarioPorLogin(String login )
         {
-           return _context.Funcionarios.Find(Login);
+           return _context.Funcionarios.FirstOrDefault(x=>x.Login.Equals(login));
         }
 
         public void Remover(int id)

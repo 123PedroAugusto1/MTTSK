@@ -36,7 +36,7 @@ namespace Repository
             return _context.Projetos.Find(id);
         }
 
-        public bool RemoverProjeto(int id)
+        public bool RemoverProjeto(int? id)
         {
             try
             {   

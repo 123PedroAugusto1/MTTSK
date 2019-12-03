@@ -38,9 +38,14 @@ namespace MyTeamTasksRecom.Controllers
 
         public IActionResult ListagemTarefa()
         {
+            ViewBag.Tarefa = _tarefaDAO.ListarTarefas();
             return View();
         }
-
+        public IActionResult ListagemProjetos()
+        {
+            
+            return View();
+        }
 
         [HttpPost]
         public IActionResult Cadastrar(Tarefa t, int idProjeto)
@@ -49,7 +54,7 @@ namespace MyTeamTasksRecom.Controllers
             t.Projeto = _projetoDAO.BuscarProjetoPorId(idProjeto);
             _tarefaDAO.CadastrarTarefa(t);
             
-            return View();
+            return RedirectToAction("ListagemTarefa");
         }
 
 

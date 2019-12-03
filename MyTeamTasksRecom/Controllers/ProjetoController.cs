@@ -35,22 +35,28 @@ namespace MyTeamTasksRecom.Controllers
 
             return View();
         }
+        public IActionResult ListagemProjetos()
+        {
+            ViewBag.Projeto = _projetoDAO.ListarTodos();
+            return View();
+        }
+        public IActionResult Remover(int? id)
+        {
+            _projetoDAO.RemoverProjeto(id);
+            return RedirectToAction("ListagemProjetos");
+        }
 
 
-       [HttpPost]
+        [HttpPost]
        public IActionResult Cadastrar(Projeto p,int idCliente)
         {
 
             p.cliente = _clienteDAO.BuscarClientePorId(idCliente);
           _projetoDAO.CadastrarProjeto(p);
 
-          return View();
+          return RedirectToAction("ListagemProjeto");
        }
 
-        //public IActionResult Remover(int id)
-        //{
-        //    _projetoDAO.RemoverProjeto(id);
-        //    return RedirectToAction("index");
-        //}
+   
     }
 }

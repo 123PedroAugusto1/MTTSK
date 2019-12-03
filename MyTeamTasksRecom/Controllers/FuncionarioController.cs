@@ -39,7 +39,8 @@ namespace MyTeamTasksRecom.Controllers
 
             return View();
         }
-        public IActionResult Index()
+
+            public IActionResult Index()
         {
 
             return View();
@@ -61,6 +62,10 @@ namespace MyTeamTasksRecom.Controllers
         {
             return View();
         }
+        public IActionResult MenuDev()
+        {
+            return View();
+        }
         public IActionResult Cadastrar()
         {
             Funcionario funcionario = new Funcionario();
@@ -72,35 +77,36 @@ namespace MyTeamTasksRecom.Controllers
             return View(funcionario);
         }
         [HttpPost]
-        public async Task<IActionResult> Login(String login, String senha)
+        public async Task<IActionResult> Login(Funcionario funcionario)
         {
             if (ModelState.IsValid)
             {
-
-                Funcionario f = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
-                if (f.Cargo.Equals(1))
-                {
-                    ViewBag.Permicao = 1; 
-                }else if (f.Cargo.Equals(2))
-                {
-                    ViewBag.Permicao = 2;
-
-                }
-                else if(f.Cargo.Equals(3))
-                {
-                    ViewBag.Permicao = 3;
-
-                }
-
-                UsuarioLogado usuarioLogado = new UsuarioLogado
-                {
-                    Email = login,
-                    UserName = login
-
-                }; 
-                await _signInManager.SignInAsync(usuarioLogado, isPersistent: false);
-                return RedirectToAction("Index");
+                return View(funcionario);
              }
+            var user = await _userManager.FindByEmailAsync(funcionario.Login);
+            if (user != null)
+            {
+                var result = await _signInManager.PasswordSignInAsync(user,funcionario.Senha, false,false );
+                if (result.Succeeded)
+                {
+                    Funcionario f = _funcionarioDAO.BuscarFuncionarioPorLogin(funcionario.Login);
+                    if(f.Cargo == 1)
+                    {
+                        return RedirectToAction("MenuAdm");
+                    }
+                    else if(f.Cargo == 2)
+                    {
+                        return RedirectToAction("MenuGestor");
+                    }
+                    else
+                    {
+                        return RedirectToAction("MenuDev");
+                    }
+                   
+                        
+                    
+                }
+            }
             return View();
         }
 
@@ -178,23 +184,25 @@ namespace MyTeamTasksRecom.Controllers
 
         }
 
-        [HttpPost]
-        public async Task<IActionResult> BucarFuncionarioPorLogin(String login)
-        {
-            TempData["BuscaFunci"] = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
+
+       [HttpPost]
+       public IActionResult BuscarFuncionarioPorLogin(Funcionario f)
+       {
+            TempData["BuscaFunci"] = _funcionarioDAO.BuscarFuncionarioPorLogin(f.Login);
 
             return RedirectToAction("DesativarFuncionario");
         }
         [HttpPost]
-        public async Task<IActionResult> DesativarFuncionario(String login)
+        public async Task<IActionResult> DesativarFuncionario(Funcionario f)
         {
-            var f = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
-
-            _funcionarioDAO.Desativar(f);
-            return RedirectToAction("DesativarFuncionario");
+            if(TempData["BuscaFunci"] != null)
+            {
+                _funcionarioDAO.Desativar(f);
+            }            
+            return View(f);
         }
         [HttpPost]
-        public async Task<IActionResult> AtivarFuncionario(String login)
+        public async Task<IActionResult> AtivarFuncionario(string login)
         {
             var f = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
             _funcionarioDAO.Ativar(f);

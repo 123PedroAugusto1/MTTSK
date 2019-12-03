@@ -27,7 +27,7 @@ namespace Domain
         [Required(ErrorMessage = "Campo obrigatório!")]
         public string Senha { get; set; }
         public Endereco Endereco { get; set; }
-
+  
         public int Status { get; set; }
 
         public override string ToString()

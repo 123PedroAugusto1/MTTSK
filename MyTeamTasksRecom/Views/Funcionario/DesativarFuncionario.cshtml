@@ -3,14 +3,6 @@
     Layout = "~/Views/Shared/LayoutAdm.cshtml"; 
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>DesetivarFuncionario</title>
-</head>
-<body>
     <form>
         <fieldset>
             <legend>Dados do Endereço</legend>
@@ -22,15 +14,17 @@
                        class="form-control" />
             </div>
             <input type="submit" class="btn btn-info"
-                   value="Buscar" asp-action="BuscarPorLogin"
-                   asp-controller="Funcionario" />
+                   value="Buscar" asp-controller="Funcionario"
+                   asp-action="BuscarFuncionarioPorLogin" />
             <div class="form-group">
                 <label asp-for="Nome"></label>
                 <input type="text" asp-for="Nome"
                        class="form-control" readonly="" />
             </div>
-       
+            <input type="submit" class="btn btn-info"
+                   value="Desativar" asp-controller="Funcionario"
+                   asp-action="Desativar" />
+
         </fieldset>
     </form>
-</body>
-</html>
+

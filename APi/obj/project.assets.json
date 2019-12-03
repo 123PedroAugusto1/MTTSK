@@ -12575,7 +12575,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pedro\\.nuget\\packages\\": {},
+    "C:\\Users\\Aluno\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12584,15 +12585,17 @@
       "projectUniqueName": "C:\\git\\MTTSK\\APi\\APi.csproj",
       "projectName": "APi",
       "projectPath": "C:\\git\\MTTSK\\APi\\APi.csproj",
-      "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
       "outputPath": "C:\\git\\MTTSK\\APi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

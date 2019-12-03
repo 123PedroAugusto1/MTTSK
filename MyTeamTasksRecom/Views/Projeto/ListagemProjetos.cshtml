@@ -1,15 +1,32 @@
 ﻿
 @{
-    Layout = null;
+    List<Projeto> projetos = ViewBag.Projeto;
+    Layout = "~/Views/Shared/LayoutGestor.cshtml";
 }
 
-<!DOCTYPE html>
+<div class="container" style="margin-top:30px;margin-bottom:30px">
+    <h2>Listagem Projeto</h2>
+    <br /><br />
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th width="101">Nome:</th>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>ListagemProjetos</title>
-</head>
-<body>
-</body>
-</html>
+                <th width="101"></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Projeto projeto in projetos)
+            {
+                <tr>
+                    <td>@projeto.Nome</td>
+                    <td>
+                        <a asp-action="Remover" asp-route-id="@projeto.ProjetoId">Remover</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

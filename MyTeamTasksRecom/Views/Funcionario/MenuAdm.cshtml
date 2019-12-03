@@ -1,6 +1,6 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/LayoutAdm.cshtml";
 }
 
 <!DOCTYPE html>
@@ -8,9 +8,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>MenuAdm</title>
+    <title>Menu Adm</title>
 </head>
 <body>
-    ADMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+    <a asp-action="Cadastrar" class="btn btn-primary btn-lg btn-block">Cadastro Funcionario </a>
+    <a asp-action="ListagemFuncionario" class="btn btn-primary btn-lg btn-block">Listagem</a>
+    <a asp-controller="Cliente" asp-action="Cadastrar" class="btn btn-primary btn-lg btn-block">Cadastro Cliente</a>
+    <a asp-controller="Cliente" asp-action="ListagemCliente" class="btn btn-primary btn-lg btn-block">Listagem Clientes</a>
+    <a asp-action="DesativarFuncionario" class="btn btn-primary btn-lg btn-block">Desativar</a>
+    <a asp-action="AtivarFuncionario" class="btn btn-primary btn-lg btn-block">Ativar</a>
 </body>
 </html>

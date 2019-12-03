@@ -1,6 +1,6 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/LayoutGestor.cshtml";
 }
 
 <!DOCTYPE html>
@@ -8,9 +8,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Menu do Gestor</title>
+    <title>Menu Gestor</title>
 </head>
 <body>
-    MENU GESTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOR
+    <a asp-controller="Projeto" asp-action="Cadastrar" class="btn btn-primary btn-lg btn-block">Cadastrar Projeto</a>
+    <a asp-controller="Projeto" asp-action="ListagemProjetos" class="btn btn-primary btn-lg btn-block">Listagem Projetos</a>
+    <a asp-controller="Tarefa" asp-action="Cadastrar" class="btn btn-primary btn-lg btn-block">Cadastro Tarefas</a>
+    <a asp-controller="Tarefa" asp-action="ListagemTarefa" class="btn btn-primary btn-lg btn-block">Listagem Tarefas</a>
+   
 </body>
 </html>
