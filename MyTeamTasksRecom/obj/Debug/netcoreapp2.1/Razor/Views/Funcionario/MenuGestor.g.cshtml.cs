@@ -70,7 +70,7 @@ using Domain;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(90, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2b5f9d43d6c24122800dd5a0e320402e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "985e3db38e584fba8bf2d000f967e647", async() => {
                 BeginContext(96, 93, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Menu Gestor</title>\r\n");
                 EndContext();
@@ -90,12 +90,12 @@ using Domain;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(198, 504, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ab851552ca84550ae15a5af8381fa2f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2c885bf1806e4552a77eb660701d608f", async() => {
                 BeginContext(204, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(210, 113, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "22371817b18d4e49b8c4b94cbd7e1b2b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ffb5d23756eb48d7aba2b81d191d67c2", async() => {
                     BeginContext(302, 17, true);
                     WriteLiteral("Cadastrar Projeto");
                     EndContext();
@@ -120,7 +120,7 @@ using Domain;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(329, 120, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3399cf56612c4852b773d1d7361ea29f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "570a794a6a16477c9a8f4bef4fe0fc89", async() => {
                     BeginContext(428, 17, true);
                     WriteLiteral("Listagem Projetos");
                     EndContext();
@@ -145,7 +145,7 @@ using Domain;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(455, 111, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ded08a894aa49f6af9a04064e5b1d60", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f70f83ae01e460aad4d1103edbaa844", async() => {
                     BeginContext(546, 16, true);
                     WriteLiteral("Cadastro Tarefas");
                     EndContext();
@@ -170,7 +170,7 @@ using Domain;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(572, 116, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0317d0839e84d85b5257a753ea9f13a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fba31b30985f41fea3fe2808be008504", async() => {
                     BeginContext(668, 16, true);
                     WriteLiteral("Listagem Tarefas");
                     EndContext();

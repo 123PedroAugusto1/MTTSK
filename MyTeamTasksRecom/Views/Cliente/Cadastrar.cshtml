@@ -3,20 +3,79 @@
     @model Cliente;
     Layout = "~/Views/Shared/LayoutAdm.cshtml";
 }
-<form asp-action="Cadastrar" method="post">
-    <fieldset>
-        <legend>Cadastrar Cliente</legend>
-        <div asp-validation-summary="ModelOnly"
-             class="text-primary"></div>
-        <div class="form-group" id="Nome">
-            <label asp-for="Nome"></label>
-            <input type="text" asp-for="Nome"
-                   class="form-control" />
-            <span asp-validation-for="Nome"
-                  class="text-primary"></span>
-        </div>
-        <input type="submit" class="btn btn-success"
-               value="Cadastrar" />
-    </fieldset>
-</form>
+    <form asp-action="Cadastrar" method="post">
+        <fieldset>
+            <legend>Dados empresa</legend>
+            <div asp-validation-summary="ModelOnly" class="text-primary"></div>
+            <div class="form-group">
+                <label asp-for="Empresa.Cnpj"></label>
+                <input type="text" class="form-control" asp-for="Empresa.Cnpj" required />
+            </div>
+            <input type="submit" class="btn btn-info" value="Buscar" asp-action="BuscarCnpj" asp-controller="Cliente" />
+
+
+            <div class="form-group" id="Nome">
+                <label asp-for="Empresa.Nome"></label>
+                <input type="text" asp-for="Empresa.Nome" class="form-control" readonly="" />
+                <span asp-validation-for="Empresa.Nome" class="text-primary"></span>
+            </div>
+
+            <div class="form-group" id="Uf">
+                <label asp-for="Empresa.UF"></label>
+                <input type="text" asp-for="Empresa.UF" class="form-control" readonly="" />
+                <span asp-validation-for="Empresa.UF" class="text-primary"></span>
+            </div>
+
+            <div class="form-group" id="cidade">
+                <label asp-for="Empresa.Municipio"></label>
+                <input type="text" asp-for="Empresa.Municipio" class="form-control" readonly="" />
+                <span asp-validation-for="Empresa.Municipio" class="text-primary"></span>
+            </div>
+
+            <div class="form-group" id="Situacao">
+                <label asp-for="Empresa.Situacao"></label>
+                <input type="text" asp-for="Empresa.Situacao" class="form-control" readonly="" />
+                <span asp-validation-for="Empresa.Situacao" class="text-primary"></span>
+            </div>
+
+            <div class="form-group" id="bairro">
+                <label asp-for="Empresa.Bairro"></label>
+                <input type="text" asp-for="Empresa.Bairro" class="form-control" readonly="" />
+                <span asp-validation-for="Empresa.Bairro" class="text-primary"></span>
+            </div>
+
+            <div class="form-group" id="logradouro">
+                <label asp-for="Empresa.Logradouro"></label>
+                <input type="text" asp-for="Empresa.Logradouro" class="form-control" readonly="" />
+                <span asp-validation-for="Empresa.Logradouro" class="text-primary"></span>
+            </div>
+
+            <div class="form-group" id="numero">
+                <label asp-for="Empresa.Numero"></label>
+                <input type="text" asp-for="Empresa.Numero" class="form-control" readonly="" />
+                <span asp-validation-for="Empresa.Numero" class="text-primary"></span>
+            </div>
+
+            <div class="form-group" id="cep">
+                <label asp-for="Empresa.Cep"></label>
+                <input type="text" asp-for="Empresa.Cep" class="form-control" readonly="" />
+                <span asp-validation-for="Empresa.Cep" class="text-primary"></span>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Cadastrar Cliente</legend>
+            <div asp-validation-summary="ModelOnly"
+                 class="text-primary"></div>
+            <div class="form-group" id="Nome">
+                <label asp-for="Nome"></label>
+                <input type="text" asp-for="Nome"
+                       class="form-control" />
+                <span asp-validation-for="Nome"
+                      class="text-primary"></span>
+            </div>
+            <input type="submit" class="btn btn-success"
+                   value="Cadastrar" />
+        </fieldset>
+    </form>
 

@@ -71,7 +71,7 @@ using Domain;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(87, 103, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "69bdfdccf16c4df9af1ae537f36b35f3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8722dd72408b4efb976909cc4fcef388", async() => {
                 BeginContext(93, 90, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Menu Adm</title>\r\n");
                 EndContext();
@@ -91,12 +91,12 @@ using Domain;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(192, 639, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e09770ae24d4d45bc6750dc2263ddac", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85873b18abf84224a85a3a7ab78c1c5a", async() => {
                 BeginContext(198, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(204, 92, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "049465c6c14c4428899e1bef70d519e7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e6210a3a9db4911ad1666924734ad4c", async() => {
                     BeginContext(271, 21, true);
                     WriteLiteral("Cadastro Funcionario ");
                     EndContext();
@@ -119,7 +119,7 @@ using Domain;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(302, 89, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e47b53aa15ad47c6a0579500496ad8a2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45ee7d36b2ca456382b8c60608eff141", async() => {
                     BeginContext(379, 8, true);
                     WriteLiteral("Listagem");
                     EndContext();
@@ -142,7 +142,7 @@ using Domain;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(397, 112, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8315d7855634b8bb156701686fd623e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70f01ee505474adf85eda8ebebffa861", async() => {
                     BeginContext(489, 16, true);
                     WriteLiteral("Cadastro Cliente");
                     EndContext();
@@ -167,7 +167,7 @@ using Domain;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(515, 119, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "063fa471e1b24fd0a314e882a48b7756", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ca6fabb6ea3d4215b74cf67abaa5d273", async() => {
                     BeginContext(613, 17, true);
                     WriteLiteral("Listagem Clientes");
                     EndContext();
@@ -192,7 +192,7 @@ using Domain;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(640, 91, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f78a731d5e19408c869603e987565eef", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b8931c16572448d7889bca427bac7599", async() => {
                     BeginContext(718, 9, true);
                     WriteLiteral("Desativar");
                     EndContext();
@@ -215,7 +215,7 @@ using Domain;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(737, 85, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01c6193e30c24053b0e1371c21f82871", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e555118e4f87475a8fc0fd429526f7f1", async() => {
                     BeginContext(812, 6, true);
                     WriteLiteral("Ativar");
                     EndContext();

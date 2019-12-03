@@ -67,12 +67,12 @@ using Domain;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(185, 171, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ef407f19d0c4214a69e1d6835ff5ebf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72b36719ff304dc1a3633eb93fb28b8d", async() => {
                 BeginContext(191, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(197, 56, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2489e127b02e41dfb120689896e3636c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0e06036f490f478c9a81b5975184f4a3", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -116,7 +116,7 @@ using Domain;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(358, 2149, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3020746199e4258871b4b2f8302846a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0147670f6f448139e3b2462e34b6c73", async() => {
                 BeginContext(364, 341, true);
                 WriteLiteral(@"
     <nav class=""navbar navbar-expand-lg navbar-dark bg-primary"">
@@ -128,7 +128,7 @@ using Domain;
                     ");
                 EndContext();
                 BeginContext(705, 128, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "231f2ee06c294dbe8aaeafc3ac9a9f92", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "23884db395974dc99dcc4c8ee5e747b6", async() => {
                     BeginContext(773, 56, true);
                     WriteLiteral("Cadastrar Projeto <span class=\"sr-only\">(current)</span>");
                     EndContext();
@@ -153,7 +153,7 @@ using Domain;
                 WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item active\">\r\n                    ");
                 EndContext();
                 BeginContext(924, 133, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af9615f66d194ada94bf43c44e898429", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a884855530bb4a269ae7b45004efeed9", async() => {
                     BeginContext(998, 55, true);
                     WriteLiteral("Listagem Projeto <span class=\"sr-only\">(current)</span>");
                     EndContext();
@@ -178,7 +178,7 @@ using Domain;
                 WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item active\">\r\n                    ");
                 EndContext();
                 BeginContext(1148, 125, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e2bfc6b09cd498d8d765e5d04a5b16c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd0b8afe85bb442f8eb02e42d7bd50ab", async() => {
                     BeginContext(1215, 54, true);
                     WriteLiteral("Cadastrar Tarefa<span class=\"sr-only\">(current)</span>");
                     EndContext();
@@ -203,7 +203,7 @@ using Domain;
                 WriteLiteral("\r\n                </li>\r\n                <li class=\"nav-item active\">\r\n                    ");
                 EndContext();
                 BeginContext(1364, 129, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "686c158ffab74889a089aa2aa18ed514", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e90114e5495f493cb51d1b21d0032142", async() => {
                     BeginContext(1436, 53, true);
                     WriteLiteral("Listagem Tarefa<span class=\"sr-only\">(current)</span>");
                     EndContext();
@@ -237,7 +237,7 @@ using Domain;
                 WriteLiteral("                    <li class=\"nav-item active\">\r\n                        ");
                 EndContext();
                 BeginContext(1727, 145, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ccaf4909e64c416aa61a00119120c43c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95b27ae4799649fa801a53f29ddd3f69", async() => {
                     BeginContext(1824, 44, true);
                     WriteLiteral("Logout<span class=\"sr-only\">(current)</span>");
                     EndContext();
@@ -272,7 +272,7 @@ using Domain;
                 WriteLiteral("                    <li class=\"nav-item active\">\r\n                        ");
                 EndContext();
                 BeginContext(2035, 143, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ece794ec7a244e8c8541c576f130edd1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76e92f5d3e6a48a1872b2b39a557579e", async() => {
                     BeginContext(2131, 43, true);
                     WriteLiteral("Login<span class=\"sr-only\">(current)</span>");
                     EndContext();
