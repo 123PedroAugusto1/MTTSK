@@ -48,17 +48,25 @@ namespace Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Cliente",
+                name: "Empresas",
                 columns: table => new
                 {
-                    PessoaId = table.Column<int>(nullable: false)
+                    EmpresaId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Cnpj = table.Column<string>(nullable: false),
                     Nome = table.Column<string>(nullable: false),
+                    UF = table.Column<string>(nullable: false),
+                    Situacao = table.Column<string>(nullable: false),
+                    Bairro = table.Column<string>(nullable: false),
+                    Logradouro = table.Column<string>(nullable: false),
+                    Numero = table.Column<string>(nullable: false),
+                    Cep = table.Column<string>(nullable: false),
+                    Municipio = table.Column<string>(nullable: false),
                     CriadoEm = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Cliente", x => x.PessoaId);
+                    table.PrimaryKey("PK_Empresas", x => x.EmpresaId);
                 });
 
             migrationBuilder.CreateTable(
@@ -185,24 +193,23 @@ namespace Repository.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Projeto",
+                name: "Cliente",
                 columns: table => new
                 {
-                    ProjetoId = table.Column<int>(nullable: false)
+                    PessoaId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Nome = table.Column<string>(nullable: true),
-                    Status = table.Column<string>(nullable: true),
-                    clientePessoaId = table.Column<int>(nullable: true),
-                    CriadoEm = table.Column<DateTime>(nullable: false)
+                    Nome = table.Column<string>(nullable: false),
+                    CriadoEm = table.Column<DateTime>(nullable: false),
+                    EmpresaId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Projeto", x => x.ProjetoId);
+                    table.PrimaryKey("PK_Cliente", x => x.PessoaId);
                     table.ForeignKey(
-                        name: "FK_Projeto_Cliente_clientePessoaId",
-                        column: x => x.clientePessoaId,
-                        principalTable: "Cliente",
-                        principalColumn: "PessoaId",
+                        name: "FK_Cliente_Empresas_EmpresaId",
+                        column: x => x.EmpresaId,
+                        principalTable: "Empresas",
+                        principalColumn: "EmpresaId",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -228,6 +235,28 @@ namespace Repository.Migrations
                         column: x => x.Enderecoid,
                         principalTable: "Endereco",
                         principalColumn: "id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Projeto",
+                columns: table => new
+                {
+                    ProjetoId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(nullable: true),
+                    Status = table.Column<string>(nullable: true),
+                    clientePessoaId = table.Column<int>(nullable: true),
+                    CriadoEm = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Projeto", x => x.ProjetoId);
+                    table.ForeignKey(
+                        name: "FK_Projeto_Cliente_clientePessoaId",
+                        column: x => x.clientePessoaId,
+                        principalTable: "Cliente",
+                        principalColumn: "PessoaId",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -311,6 +340,11 @@ namespace Repository.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Cliente_EmpresaId",
+                table: "Cliente",
+                column: "EmpresaId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Funcionario_Enderecoid",
                 table: "Funcionario",
                 column: "Enderecoid");
@@ -373,6 +407,9 @@ namespace Repository.Migrations
 
             migrationBuilder.DropTable(
                 name: "Cliente");
+
+            migrationBuilder.DropTable(
+                name: "Empresas");
         }
     }
 }

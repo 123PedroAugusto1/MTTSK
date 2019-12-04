@@ -56,14 +56,16 @@ namespace Repository
         }
         public void Desativar(Funcionario f)
         {
-            f.Status = 0;
-            _context.Funcionarios.Update(f);
+            Funcionario funcionario = BuscarFuncionarioPorLogin(f.Login);
+            funcionario.Status = 0;
+            _context.Funcionarios.Update(funcionario);
             _context.SaveChanges();
         }
         public void Ativar(Funcionario f)
         {
-            f.Status = 1;
-            _context.Funcionarios.Update(f);
+            Funcionario funcionario = BuscarFuncionarioPorLogin(f.Login);
+            funcionario.Status = 1;
+            _context.Funcionarios.Update(funcionario);
             _context.SaveChanges();
         }
 

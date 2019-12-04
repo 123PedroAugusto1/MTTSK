@@ -16,7 +16,7 @@ namespace Domain
         {
             CriadoEm = DateTime.Now;
         }
-
+        public Empresa Empresa { get; set; }
         public override string ToString()
         {
             return Nome;

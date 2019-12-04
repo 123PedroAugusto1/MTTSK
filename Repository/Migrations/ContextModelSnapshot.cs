@@ -27,12 +27,56 @@ namespace Repository.Migrations
 
                     b.Property<DateTime>("CriadoEm");
 
+                    b.Property<int?>("EmpresaId");
+
                     b.Property<string>("Nome")
                         .IsRequired();
 
                     b.HasKey("PessoaId");
 
+                    b.HasIndex("EmpresaId");
+
                     b.ToTable("Cliente");
+                });
+
+            modelBuilder.Entity("Domain.Empresa", b =>
+                {
+                    b.Property<int>("EmpresaId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Bairro")
+                        .IsRequired();
+
+                    b.Property<string>("Cep")
+                        .IsRequired();
+
+                    b.Property<string>("Cnpj")
+                        .IsRequired();
+
+                    b.Property<DateTime>("CriadoEm");
+
+                    b.Property<string>("Logradouro")
+                        .IsRequired();
+
+                    b.Property<string>("Municipio")
+                        .IsRequired();
+
+                    b.Property<string>("Nome")
+                        .IsRequired();
+
+                    b.Property<string>("Numero")
+                        .IsRequired();
+
+                    b.Property<string>("Situacao")
+                        .IsRequired();
+
+                    b.Property<string>("UF")
+                        .IsRequired();
+
+                    b.HasKey("EmpresaId");
+
+                    b.ToTable("Empresas");
                 });
 
             modelBuilder.Entity("Domain.Endereco", b =>
@@ -303,6 +347,13 @@ namespace Repository.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
+                });
+
+            modelBuilder.Entity("Domain.Cliente", b =>
+                {
+                    b.HasOne("Domain.Empresa", "Empresa")
+                        .WithMany()
+                        .HasForeignKey("EmpresaId");
                 });
 
             modelBuilder.Entity("Domain.Funcionario", b =>

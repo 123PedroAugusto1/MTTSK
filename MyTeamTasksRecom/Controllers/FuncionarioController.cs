@@ -47,11 +47,24 @@ namespace MyTeamTasksRecom.Controllers
         }
         public IActionResult AtivarFuncionario()
         {
+            if (TempData["BuscaFunci2"] != null)
+            {
+                string dados = TempData["BuscaFunci2"].ToString();
+                Funcionario result = JsonConvert.DeserializeObject<Funcionario>(dados);
 
+                return View(result);
+            }
             return View();
         }
         public IActionResult DesativarFuncionario()
         {
+            if (TempData["BuscaFunci"] != null)
+            {
+                string dados = TempData["BuscaFunci2"].ToString();
+                Funcionario result = JsonConvert.DeserializeObject<Funcionario>(dados);
+                
+                return View(result);
+            }
             return View();
         }
         public IActionResult MenuAdm()
@@ -188,25 +201,28 @@ namespace MyTeamTasksRecom.Controllers
        [HttpPost]
        public IActionResult BuscarFuncionarioPorLogin(Funcionario f)
        {
-            TempData["BuscaFunci"] = _funcionarioDAO.BuscarFuncionarioPorLogin(f.Login);
+            TempData["BuscaFunci"] = JsonConvert.SerializeObject(_funcionarioDAO.BuscarFuncionarioPorLogin(f.Login));
 
-            return RedirectToAction("DesativarFuncionario");
+            return RedirectToAction(nameof(DesativarFuncionario));
+       }
+        [HttpPost]
+        public IActionResult BuscarFuncionarioPorLogin2(Funcionario f)
+        {
+            TempData["BuscaFunci2"] = JsonConvert.SerializeObject(_funcionarioDAO.BuscarFuncionarioPorLogin(f.Login));
+
+            return RedirectToAction(nameof(AtivarFuncionario));
         }
         [HttpPost]
         public async Task<IActionResult> DesativarFuncionario(Funcionario f)
         {
-            if(TempData["BuscaFunci"] != null)
-            {
-                _funcionarioDAO.Desativar(f);
-            }            
-            return View(f);
+            _funcionarioDAO.Desativar(f);
+            return RedirectToAction("ListagemFuncionario");
         }
         [HttpPost]
-        public async Task<IActionResult> AtivarFuncionario(string login)
+        public async Task<IActionResult> AtivarFuncionario(Funcionario f)
         {
-            var f = _funcionarioDAO.BuscarFuncionarioPorLogin(login);
             _funcionarioDAO.Ativar(f);
-            return RedirectToAction("AtivarFuncionario");
+            return RedirectToAction("ListagemFuncionario");
         }
 
 
