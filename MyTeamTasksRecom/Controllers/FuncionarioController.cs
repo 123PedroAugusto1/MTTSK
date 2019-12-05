@@ -60,7 +60,7 @@ namespace MyTeamTasksRecom.Controllers
         {
             if (TempData["BuscaFunci"] != null)
             {
-                string dados = TempData["BuscaFunci2"].ToString();
+                string dados = TempData["BuscaFunci"].ToString();
                 Funcionario result = JsonConvert.DeserializeObject<Funcionario>(dados);
                 
                 return View(result);
@@ -172,7 +172,10 @@ namespace MyTeamTasksRecom.Controllers
             _funcionarioDAO.Remover(id);
             return RedirectToAction("ListagemFuncionario");
         }
-
+        public IActionResult Alterar()
+        {
+            return View();
+        }
         [HttpPost]
         public async Task<IActionResult> Alterar(Funcionario f)
         {

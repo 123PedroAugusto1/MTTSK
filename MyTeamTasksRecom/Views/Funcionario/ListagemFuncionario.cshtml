@@ -2,7 +2,8 @@
 @{
     List<Funcionario> funcionarios = ViewBag.Funcionarios;
     Layout = "~/Views/Shared/LayoutAdm.cshtml";
-
+    string cargo = "";
+    string status = "";
 }
 
 
@@ -15,7 +16,7 @@
             <tr>
                 <th width="101">Nome:</th>
                 <th width="101">Cargo:</th>
-
+                <th width="101">Status:</th>
                 <th width="101"></th>
 
             </tr>
@@ -23,13 +24,35 @@
         <tbody>
             @foreach (Funcionario funcionario in funcionarios)
             {
-                <tr>
-                    <td>@funcionario.Nome</td>
-                    <td>
-                        <a asp-action="Remover" asp-route-id="@funcionario.PessoaId">Remover</a>
-                        <a asp-action="Alterar" asp-route-id="@funcionario.PessoaId">Alterar</a>
-                    </td>
-                </tr>
+            <tr>
+                <td>@funcionario.Nome</td>
+                @if (funcionario.Cargo == 1)
+                {
+                    cargo = "Administrador";
+                }
+                else if (funcionario.Cargo == 2)
+                {
+                    cargo = "Gestor";
+                }
+                else if (funcionario.Cargo == 3)
+                {
+                    cargo = "Desenvolvedor";
+                }
+                <td>@cargo</td>
+                @if (funcionario.Status == 0)
+                {
+                    status = "Inativo";
+                }
+                else 
+                {
+                    status = "Ativo";
+                }
+                <td>@status</td>
+                <td>
+                    <a asp-action="Remover" asp-route-id="@funcionario.PessoaId">Remover</a>
+                    <a asp-action="Alterar" asp-route-id="@funcionario.PessoaId">Alterar</a>
+                </td>
+            </tr>
             }
 
         </tbody>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj": {}
+    "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj": {}
   },
   "projects": {
-    "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
+    "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MTTSK\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MTTSK\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ronal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ronal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,27 +53,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj": {
+    "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
+        "projectUniqueName": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
         "projectName": "MyTeamTasksRecom",
-        "projectPath": "C:\\git\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
-        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MTTSK\\MyTeamTasksRecom\\obj\\",
+        "projectPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\MyTeamTasksRecom\\MyTeamTasksRecom.csproj",
+        "packagesPath": "C:\\Users\\ronal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\MyTeamTasksRecom\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ronal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,11 +92,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj"
+              "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Domain\\Domain.csproj"
               },
-              "C:\\git\\MTTSK\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\git\\MTTSK\\Repository\\Repository.csproj"
+              "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Repository\\Repository.csproj"
               }
             }
           }
@@ -116,6 +122,7 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
@@ -126,27 +133,33 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\git\\MTTSK\\Repository\\Repository.csproj": {
+    "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\MTTSK\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\git\\MTTSK\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\MTTSK\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\ronal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ronal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -159,8 +172,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\git\\MTTSK\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\git\\MTTSK\\Domain\\Domain.csproj"
+              "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ronal\\Source\\Repos\\MTTSK\\Domain\\Domain.csproj"
               }
             }
           }
@@ -186,10 +199,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -49,12 +49,12 @@ namespace MyTeamTasksRecom.Controllers
 
         [HttpPost]
        public IActionResult Cadastrar(Projeto p,int idCliente)
-        {
+       {
 
             p.cliente = _clienteDAO.BuscarClientePorId(idCliente);
           _projetoDAO.CadastrarProjeto(p);
 
-          return RedirectToAction("ListagemProjeto");
+          return RedirectToAction("ListagemProjetos");
        }
 
    
