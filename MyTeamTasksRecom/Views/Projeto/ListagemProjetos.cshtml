@@ -20,10 +20,7 @@
             @foreach (Projeto projeto in projetos)
             {
                 <tr>
-                    <td>@projeto.Nome</td>
-                    <td>
-                        <a asp-action="Remover" asp-route-id="@projeto.ProjetoId">Remover</a>
-                    </td>
+                    <td>@projeto</td>
                 </tr>
             }
 

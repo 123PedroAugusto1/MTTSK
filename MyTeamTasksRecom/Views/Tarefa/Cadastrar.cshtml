@@ -1,7 +1,7 @@
 ﻿@model Tarefa
 @{
 
-    Layout = "~/Views/Shared/LayoutProjeto.cshtml";
+    Layout = "~/Views/Shared/LayoutGestor.cshtml";
 
 }
 
@@ -22,6 +22,20 @@
             <label>Projeto:</label>
             <select asp-items="@ViewBag.Projetos"
                     class="form-control" name="idProjeto">
+                <option> -- SELECIONE -- </option>
+            </select>
+        </div>
+        <div id="PessoaId" class="form-group">
+            <label>Requisitante:</label>
+            <select asp-items="@ViewBag.Requisitante"
+                    class="form-control" name="idRequisitante">
+                <option> -- SELECIONE -- </option>
+            </select>
+        </div>
+        <div id="PessoaId" class="form-group">
+            <label>Realizador:</label>
+            <select asp-items="@ViewBag.Assinatura"
+                    class="form-control" name="idAssinatura">
                 <option> -- SELECIONE -- </option>
             </select>
         </div>

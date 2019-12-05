@@ -1,16 +1,32 @@
 ﻿
 @{
     Layout = "~/Views/Shared/LayoutDev.cshtml";
+    List<Tarefa> tarefas = ViewBag.Tarefa;
 }
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Menu Dev</title>
-</head>
-<body>
-    
-</body>
-</html>
+<div class="container" style="margin-top:30px;margin-bottom:30px">
+    <h2>Listagem Tarefas</h2>
+    <br /><br />
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th width="101">Nome:</th>
+
+                <th width="101"></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Tarefa tarefa in tarefas)
+            {
+                <tr>
+                    <td>@tarefa.Titulo</td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

@@ -12,6 +12,7 @@ namespace MyTeamTasksRecom.Controllers
     public class TarefaController : Controller
     {
         public readonly TarefaDAO _tarefaDAO;
+        public readonly FuncionarioDAO _funcionarioDAO;
 
         public readonly ProjetoDAO _projetoDAO;
 
@@ -21,10 +22,11 @@ namespace MyTeamTasksRecom.Controllers
         }
 
 
-        public TarefaController(ProjetoDAO projetoDAO, TarefaDAO tarefaDAO)
+        public TarefaController(ProjetoDAO projetoDAO, TarefaDAO tarefaDAO, FuncionarioDAO funcionarioDAO)
         {
             _tarefaDAO = tarefaDAO;
             _projetoDAO = projetoDAO;
+            _funcionarioDAO = funcionarioDAO;
 
         }
 
@@ -33,6 +35,12 @@ namespace MyTeamTasksRecom.Controllers
             ViewBag.Projetos = new SelectList
                (_projetoDAO.ListarTodos(), "ProjetoId",
                "Nome");
+            ViewBag.Requisitante = new SelectList
+              (_funcionarioDAO.ListarTodos(), "PessoaId",
+              "Nome");
+            ViewBag.Assinatura = new SelectList
+              (_funcionarioDAO.ListarTodos(), "PessoaId",
+              "Nome");
             return View();
         }
 
@@ -48,10 +56,12 @@ namespace MyTeamTasksRecom.Controllers
         }
 
         [HttpPost]
-        public IActionResult Cadastrar(Tarefa t, int idProjeto)
+        public IActionResult Cadastrar(Tarefa t, int idProjeto,int idAssinatura,int idRequisitante)
         {
 
             t.Projeto = _projetoDAO.BuscarProjetoPorId(idProjeto);
+            t.Assinatura = _funcionarioDAO.BuscarFuncionarioPorId(idAssinatura);
+            t.Requisitante = _funcionarioDAO.BuscarFuncionarioPorId(idRequisitante);
             _tarefaDAO.CadastrarTarefa(t);
             
             return RedirectToAction("ListagemTarefa");

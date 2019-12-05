@@ -17,16 +17,20 @@ namespace MyTeamTasksRecom.Controllers
     public class FuncionarioController : Controller
     {
         public readonly FuncionarioDAO _funcionarioDAO;
+        public readonly TarefaDAO _tarefaDAO;
         private readonly UserManager<UsuarioLogado> _userManager;
         private readonly SignInManager<UsuarioLogado> _signInManager;
 
         public FuncionarioController(FuncionarioDAO funcionarioDAO,
             UserManager<UsuarioLogado> userManager,
-            SignInManager<UsuarioLogado> signInManager)
+            SignInManager<UsuarioLogado> signInManager,
+            TarefaDAO tarefaDAO
+            )
         {
             _funcionarioDAO = funcionarioDAO;
             _userManager = userManager;
             _signInManager = signInManager;
+            _tarefaDAO = tarefaDAO;
         }
 
         public IActionResult ListagemFuncionario()
@@ -39,7 +43,10 @@ namespace MyTeamTasksRecom.Controllers
 
             return View();
         }
-
+        public IActionResult Alterar(int id)
+        {
+            return View(_funcionarioDAO.BuscarFuncionarioPorId(id));
+        }
             public IActionResult Index()
         {
 
@@ -60,7 +67,7 @@ namespace MyTeamTasksRecom.Controllers
         {
             if (TempData["BuscaFunci"] != null)
             {
-                string dados = TempData["BuscaFunci2"].ToString();
+                string dados = TempData["BuscaFunci"].ToString();
                 Funcionario result = JsonConvert.DeserializeObject<Funcionario>(dados);
                 
                 return View(result);
@@ -77,6 +84,7 @@ namespace MyTeamTasksRecom.Controllers
         }
         public IActionResult MenuDev()
         {
+            ViewBag.Tarefa = _tarefaDAO.ListarTarefas();
             return View();
         }
         public IActionResult Cadastrar()
@@ -168,16 +176,37 @@ namespace MyTeamTasksRecom.Controllers
 
         public async Task<IActionResult> Remover(int id)
         {
+            try
+            {
+                _funcionarioDAO.Remover(id);
+                return RedirectToAction("ListagemFuncionario");
+            }catch(Exception e)
+            {
+                ModelState.AddModelError
+                   ("", "Funcionario vinculado a uma tarefa não pode excluir");
+                return RedirectToAction("ListagemFuncionario"); ;
+            }
+            return View();
 
-            _funcionarioDAO.Remover(id);
-            return RedirectToAction("ListagemFuncionario");
         }
+
+       
 
         [HttpPost]
         public async Task<IActionResult> Alterar(Funcionario f)
         {
-            _funcionarioDAO.Alterar(f);
-            return RedirectToAction("ListagemFuncionario");
+            if (ModelState.IsValid)
+            {
+            
+                if (_funcionarioDAO.Alterar(f))
+                {
+                    return RedirectToAction("ListagemFuncionario");
+                }
+                ModelState.AddModelError
+                    ("", "");
+                return View(f);
+            }
+            return View(f);
         }
 
         public async Task<IActionResult> Logout()

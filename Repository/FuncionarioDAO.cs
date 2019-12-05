@@ -49,10 +49,17 @@ namespace Repository
             _context.SaveChanges();
         }
 
-        public void Alterar(Funcionario f)
+        public bool Alterar(Funcionario f)
         {
-            _context.Funcionarios.Update(f);
-            _context.SaveChanges();
+            try
+            {
+                _context.Funcionarios.Update(f);
+                _context.SaveChanges();
+                return true;
+            }catch(Exception e)
+            {
+                return false;
+            } 
         }
         public void Desativar(Funcionario f)
         {
