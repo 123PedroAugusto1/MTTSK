@@ -24,10 +24,11 @@
             @foreach (Funcionario funcionario in funcionarios)
             {
                 if (funcionario.Status != 0 ) {
+
                 <tr>
                     <td>@funcionario.Nome</td>
                     <td>
-                        <a asp-action="Remover" asp-route-id="@funcionario.PessoaId" asp-messa>Remover</a>
+                        <a asp-action="Remover" asp-route-id="@funcionario.PessoaId">Remover</a>
                         <a asp-action="Alterar" asp-route-id="@funcionario.PessoaId">Alterar</a>
                     </td>
                 </tr>

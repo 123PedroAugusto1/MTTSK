@@ -1,0 +1,59 @@
+﻿@model Tarefa
+@{
+
+    Layout = "~/Views/Shared/LayoutDev.cshtml";
+
+}
+<form asp-action="Alterar2" method="post">
+    <fieldset>
+        <legend>Monitorar Tarefa</legend>
+        <input type="hidden" asp-for="TarefaId" />
+        <div class="form-group">
+            <label>Id:</label>
+            <input type="text" asp-for="TarefaId"
+                   readonly="" class="form-control" />
+        </div>
+        <div asp-validation-summary="ModelOnly"
+             class="text-primary"></div>
+
+        <div class="form-group" id="Nome">
+            <label asp-for="Titulo"></label>
+            <input type="text" asp-for="Titulo"
+                   class="form-control" readonly="" />
+            <span asp-validation-for="Titulo"
+                  class="text-primary"></span>
+        </div>
+        <div class="form-group" id="Tipo">
+            <label asp-for="Tipo"></label>
+            <input type="text" asp-for="Tipo"
+                   class="form-control" readonly="" />
+            <span asp-validation-for="Tipo"
+                  class="text-primary"></span>
+        </div>
+        <div class="form-group" id="Status">
+            <label asp-for="Status"></label>
+            <input type="text" asp-for="Status"
+                   class="form-control" />
+            <span asp-validation-for="Status"
+                  class="text-primary"></span>
+        </div>
+        <div id="PessoaId" class="form-group">
+            <label>Realizador:</label>
+            <select asp-items="@ViewBag.Assinatura"
+                    class="form-control" name="idAssinatura">
+                <option> -- SELECIONE -- </option>
+            </select>
+        </div>
+        <div class="form-group" id="Descricao">
+            <label asp-for="Descricao"></label>
+            <input type="text" asp-for="Descricao"
+                   class="form-control" />
+            <span asp-validation-for="Descricao"
+                  class="text-primary"></span>
+        </div>
+
+    </fieldset>
+    <input type="submit" class="btn btn-success"
+           value="Alterar" />
+
+</form>

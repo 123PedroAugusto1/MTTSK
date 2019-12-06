@@ -55,7 +55,13 @@ namespace MyTeamTasksRecom.Controllers
             _projetoDAO.RemoverProjeto(id);
             return RedirectToAction("ListagemProjetos");
         }
+        public IActionResult tarefas(int? id)
+        {
+            _projetoDAO.RemoverProjeto(id);
+            return RedirectToAction("ListagemProjetos");
+        }
 
+       
 
         [HttpPost]
        public IActionResult Cadastrar(Projeto p,int idCliente)

@@ -8,7 +8,7 @@
     <h2>Listagem Tarefas</h2>
     <br /><br />
     <div asp-validation-summary="ModelOnly"
-               class="text-primary"></div>
+         class="text-primary"></div>
     <table class="table table-hover">
         <thead>
             <tr>
@@ -22,16 +22,16 @@
         <tbody>
             @foreach (Tarefa tarefa in tarefas)
             {
-            <tr>
-                <td>@tarefa.Titulo</td>
-                <td>@tarefa.Prioridade</td>
-                <td>@tarefa.Status</td>
-                <td>
-                    <a asp-action="VerTarefa" asp-route-id="@tarefa.TarefaId" >Ver tarefa </a>
-               
-                </td>
+                <tr>
+                    <td>@tarefa.Titulo</td>
+                    <td>@tarefa.Prioridade</td>
+                    <td>@tarefa.Status</td>
+                    <td>
+                        <a asp-action="VerTarefa" asp-route-id="@tarefa.TarefaId">Ver tarefa </a>
 
-            </tr>
+                    </td>
+
+                </tr>
             }
 
         </tbody>

@@ -151,3 +151,6 @@ C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\In
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\DesativarFuncionario.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\MenuDev.g.cshtml.cs
 C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Funcionario\AtivarFuncionario.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Tarefa\VerTarefa.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Tarefa\VerTarefa2.g.cshtml.cs
+C:\git\MTTSK\MyTeamTasksRecom\obj\Debug\netcoreapp2.1\Razor\Views\Projeto\Tarefas.g.cshtml.cs

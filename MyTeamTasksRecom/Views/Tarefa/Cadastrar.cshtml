@@ -46,9 +46,22 @@
             <span asp-validation-for="Status"
                   class="text-primary"></span>
         </div>
+        <div class="form-group" id="Descricao">
+            <label asp-for="Descricao"></label>
+            <input type="text" asp-for="Descricao"
+                   class="form-control" />
+            <span asp-validation-for="Descricao"
+                  class="text-primary"></span>
+        </div>
+        <div class="form-group" id="Tipo">
+            <label asp-for="Tipo"></label>
+            <input type="text" asp-for="Tipo"
+                   class="form-control" />
+            <span asp-validation-for="Tipo"
+                  class="text-primary"></span>
 
-        <input type="submit" class="btn btn-success"
-               value="Cadastrar" />
+            <input type="submit" class="btn btn-success"
+                   value="Cadastrar" />
     </fieldset>
 </form>
 

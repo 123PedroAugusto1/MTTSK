@@ -20,6 +20,11 @@ namespace Repository
             _context.Projetos.Add(p);
             _context.SaveChanges();
         }
+        //public List<Tarefa> TarefasPorEmpresa(int id)
+        //{
+        //    return _context.Projetos.FirstOrDefault(x => x.ProjetoId == id).Include(x => x.Tarefas).ToList();
+
+        //}
 
 
         public Projeto BuscarProjetoPorNome(string nome)

@@ -20,7 +20,7 @@ namespace MyTeamTasksRecom.Controllers
         {
             return View();
         }
-
+       
 
         public TarefaController(ProjetoDAO projetoDAO, TarefaDAO tarefaDAO, FuncionarioDAO funcionarioDAO)
         {
@@ -29,7 +29,20 @@ namespace MyTeamTasksRecom.Controllers
             _funcionarioDAO = funcionarioDAO;
 
         }
-
+        public IActionResult VerTarefa(int id)
+        {
+            ViewBag.Assinatura = new SelectList
+            (_funcionarioDAO.ListarTodos(), "PessoaId",
+            "Nome");
+            return View(_tarefaDAO.BuscarTarefaPorId(id));
+        }
+        public IActionResult VerTarefa2(int id)
+        {
+            ViewBag.Assinatura = new SelectList
+            (_funcionarioDAO.ListarTodos(), "PessoaId",
+            "Nome");
+            return View(_tarefaDAO.BuscarTarefaPorId(id));
+        }
         public IActionResult Cadastrar()
         {
             ViewBag.Projetos = new SelectList
@@ -66,7 +79,18 @@ namespace MyTeamTasksRecom.Controllers
             
             return RedirectToAction("ListagemTarefa");
         }
-
+        [HttpPost]
+        public IActionResult Alterar(Tarefa t)
+        {
+            _tarefaDAO.Alterar(t);
+            return RedirectToAction("ListagemTarefa");
+        }
+        [HttpPost]
+        public IActionResult Alterar2(Tarefa t)
+        {
+            _tarefaDAO.Alterar(t);
+            return RedirectToAction("MenuDev","Funcionario");
+        }
 
     }
 }

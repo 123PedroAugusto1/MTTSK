@@ -28,13 +28,24 @@ namespace Repository
         {
             return _context.Tarefas.Where(x => x.Status == tarefa.Status).ToList();
         }
+       
 
         public Tarefa BuscarTarefaPorId(int id)
         {
             return _context.Tarefas.FirstOrDefault(x => x.TarefaId == id);
         }
 
-        public  bool RemoverTarefa(Tarefa tarefa)
+        public void Alterar(Tarefa t)
+        {
+
+            _context.Tarefas.Update(t);
+            _context.SaveChanges();
+            
+        }
+
+
+
+        public bool RemoverTarefa(Tarefa tarefa)
         {
             try
             {
